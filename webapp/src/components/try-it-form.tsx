@@ -17,6 +17,7 @@ import {
   FAULT_SEVERITY_RANK,
 } from "@/lib/rule-engine";
 import { computeRiskScore } from "@/lib/risk-score";
+import { buildNarrative } from "@/lib/explain";
 
 const GAS_LABELS: Record<GasKey, string> = {
   h2: "H2 (Hidrogen)",
@@ -394,27 +395,15 @@ export function TryItForm() {
 
               <Separator />
 
-              <div className="text-sm space-y-1">
-                <p>
-                  Klasifikasi O2/N2: <strong>{result.o2n2Class}</strong> &middot; Kelompok usia:{" "}
-                  <strong>{result.ageBucket}</strong>
+              <div>
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+                  Kesimpulan
                 </p>
-                {result.exceedsTable2.length > 0 && (
-                  <p>
-                    Melebihi Tabel 2 (95th percentile):{" "}
-                    <strong>{result.exceedsTable2.join(", ").toUpperCase()}</strong>
-                  </p>
-                )}
-                {result.exceedsTable1.length > 0 && (
-                  <p>
-                    Melebihi Tabel 1 (90th percentile):{" "}
-                    <strong>{result.exceedsTable1.join(", ").toUpperCase()}</strong>
-                  </p>
-                )}
-                <p>
-                  Jumlah gas yang &quot;memburuk&quot; (Trend Engine): <strong>{result.nGasWorsening}</strong>
-                  {result.worseningGases.length > 0 && ` (${result.worseningGases.join(", ").toUpperCase()})`}
-                </p>
+                <div className="space-y-2.5 text-sm leading-relaxed">
+                  {buildNarrative(result).map((p, i) => (
+                    <p key={i}>{p}</p>
+                  ))}
+                </div>
               </div>
             </>
           )}
