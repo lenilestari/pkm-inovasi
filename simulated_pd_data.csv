@@ -1,0 +1,967 @@
+asset_id;asset_name;voltage_level;criticality;measurement_uuid;measured_at;overall_severity;humidity;temperature;method;unit;value;reading_severity;threshold_watch;threshold_warning;threshold_critical;reading_point_name;phase;position;lab_fault_type;lab_status;h2_ppm
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;18.548;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;3;2
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;18.033;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;3;2
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;11.306;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;3;2
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;10.297;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;3;2
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;14.367;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;3;2
+TR-26;TR-26;;Medium;46b1a32d-5baf-6c3f-69a3-a87ca2e1199a;2023-03-27;Normal;74.77;31.83;UHF;mV;13.363;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;3;2
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;21.878;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;6
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;19.28;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;6
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;14.5;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;6
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;13.647;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;6
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;15.75;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;6
+TR-26;TR-26;;Medium;d93edd1a-9101-cfdd-3c1d-d0d510245799;2023-07-25;Normal;65.63;37.06;UHF;mV;14.835;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;6
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;23.875;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;21.689;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;15.741;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;15.486;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;14.99;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-26;TR-26;;Medium;957e63f6-4c4d-2fd0-12a7-e6cf98622f71;2023-11-23;Normal;59.94;33.59;UHF;mV;14.839;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;6.731;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;6.773;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;10.656;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;10.642;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;7.751;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+TR-27;TR-27;;Medium;249df38d-3097-ca32-2be4-fa81a2542fea;2023-03-27;Normal;50.76;31.71;UHF;mV;8.623;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;9.73;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;8
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;9.144;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;8
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;14.339;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;8
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;15.031;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;8
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;9.241;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;8
+TR-27;TR-27;;Medium;78ff1884-71af-316f-74f3-89796330c94a;2023-11-23;Normal;70.95;33.84;UHF;mV;9.838;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;8
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;31.4;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;28.25;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;18.162;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;17.761;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;15.435;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;bac96977-e24a-a76b-599e-404fa286c2fd;2023-05-03;Normal;46.43;29.39;UHF;mV;15.395;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;13.547;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;11.652;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;9.068;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;7.929;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;7.926;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;3
+1N-TR-001;1N-TR-001;;Medium;43d29c0b-9bdc-942b-ac82-31b29bdb5bed;2024-02-06;Normal;50.73;29.21;UHF;mV;7.891;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;3
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;19.012;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;20.064;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;33.177;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;30.971;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;15.872;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;de03daec-256a-257b-8a34-10ee1a890ac3;2023-05-03;Normal;69.35;33.64;UHF;mV;16.733;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;26
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;24.809;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;18
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;22.623;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;18
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;32.036;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;18
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;31.557;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;18
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;16.792;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;18
+2N-TR-001;2N-TR-001;;Medium;cf2523b0-156b-9cc1-acf8-ace67f8bec06;2024-02-07;Normal;66.58;37.75;UHF;mV;17.916;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;18
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;7.821;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;0
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;8.892;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;0
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;7.897;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;0
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;7.057;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;0
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;10.301;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;0
+TR-31;TR-31;;Medium;07e4e63e-ee09-b745-5757-c2481620efe0;2023-05-03;Normal;58.27;35.24;UHF;mV;10.546;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;0
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;8.61;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;8.886;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;7.741;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;8.805;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;14.093;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+TR-31;TR-31;;Medium;eac952f7-73b6-6a72-0996-9771cd0aad32;2024-02-06;Normal;59.71;30.44;UHF;mV;14.78;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;16.968;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;15.215;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;27.03;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;26.381;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;21.045;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;7b9664d3-bf43-9f7c-e114-7b7654147ca1;2023-03-27;Normal;42.41;37.62;UHF;mV;22.671;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;9.858;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;11.018;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;16.361;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;18.013;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;10.359;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;0
+F6P-1001MVTR;F6P-1001MVTR;;Medium;721517ee-20b9-05f5-fdcf-708e29d0a5fe;2023-11-23;Normal;49.32;32.82;UHF;mV;10.59;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;25.724;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;23.319;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;14.982;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;14.654;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;12.629;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;44187aea-fd0e-2e56-827e-7df223ee5f5a;2024-02-07;Normal;40.01;34.15;UHF;mV;12.205;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;0
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;23.752;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;7
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;22.59;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;7
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;15.066;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;7
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;17.846;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;7
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;15.616;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;7
+TR-314C-Srigading;TR-314C-Srigading;;Medium;a04bcc05-4815-00f3-7e7e-3ee0bf93116d;2024-06-06;Normal;54.65;33.74;UHF;mV;15.323;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;7
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;18.569;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;16.455;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;13.378;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;15.472;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;13.763;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;94ad4f82-0302-d5a3-7b48-3d9830959541;2024-02-06;Normal;66.4;32.08;UHF;mV;12.81;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;0
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;56.455;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;2;5
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;56.079;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;2;5
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;47.954;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;2;5
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;44.046;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;2;5
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;28.842;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;2;5
+TR-Kolam-Renang;TR-Kolam-Renang;;Medium;12bd4c96-263d-e906-d899-d3a1a94ea5ff;2024-03-05;Watch;46.39;33.29;UHF;mV;32.881;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;2;5
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;22.122;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;25.848;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;13.002;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;14.269;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;18.379;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;6e14109a-3e02-93fa-993d-924e5faee268;2016-11-18;Normal;44.1;37.19;UHF;mV;17.13;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;1088
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;33.221;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;30.756;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;24.262;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;23.48;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;18.344;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;ed695e5e-1818-9624-c0a2-c3a27c756fd1;2020-09-17;Normal;47.84;37.14;UHF;mV;18.727;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;439
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;77.579;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;78.698;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;43.556;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;46.658;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;43.397;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;7de1d89a-bc7f-c46e-64d6-781f6b82f0ff;2023-05-23;Watch;46.68;36.92;UHF;mV;38.006;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;3;424
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;84.501;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;2;420
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;98.858;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;2;420
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;58.577;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;2;420
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;51.551;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;2;420
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;48.161;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;2;420
+F5O-TR55;F5O-TR55;;Medium;dae392db-58b5-bba8-bdd8-ee75c683a8ee;2024-06-05;Watch;43.16;36.85;UHF;mV;46.841;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;2;420
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;26.253;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;26.053;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;18.438;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;18.225;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;11.364;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;4f18aedd-fb77-4923-e860-039804c5b876;2016-11-18;Normal;65.42;33.28;UHF;mV;13.639;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;8
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;29.843;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;28.984;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;15.471;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;16.175;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;12.507;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;236de06c-9c30-e53d-7002-3c087ebfe376;2020-09-17;Normal;67.79;28.18;UHF;mV;14.266;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;30
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;59.978;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;59.496;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;61.006;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;52.282;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;50.358;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;f3cf7a5c-3f7e-77e1-317d-531488a89048;2023-05-23;Watch;54.63;28.32;UHF;mV;58.602;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;3;0
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;44.011;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;2;8
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;42.085;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;2;8
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;31.361;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;2;8
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;33.864;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;2;8
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;28.147;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;2;8
+F5O-TR512A;F5O-TR512A;;Medium;be68de16-249f-4c78-e104-3dbccacf0069;2024-06-05;Normal;53.68;28.92;UHF;mV;24.085;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;2;8
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;527.569;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;551.736;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;602.714;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;617.858;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;1033.6;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;e08c9649-4be5-e806-7200-98a4543380ae;2023-03-27;Critical;40.99;31.34;UHF;mV;983.841;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;2559
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;772.447;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;745.563;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;753.468;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;697.1;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;879.139;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;8646157a-3c96-3a12-cb5e-60457771c2ba;2023-07-25;Critical;73.61;31.07;UHF;mV;797.612;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;2593
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;476.273;Warning;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;2541
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;548.843;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;2541
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;509.965;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;2541
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;550.0;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;2541
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;799.25;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;2541
+TR-40;TR-40;;Urgent;0e8aa281-b2de-51a0-4fb4-bfd682bbfbad;2023-11-23;Critical;54.37;37.33;UHF;mV;859.527;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;2541
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;208.515;Warning;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;228.821;Warning;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;120.986;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;131.159;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;132.387;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;26b3de14-f61b-d933-180f-16eff79991c6;2023-03-27;Warning;55.78;36.75;UHF;mV;120.274;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;619
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;1974.83;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;2160.982;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;1190.694;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;1227.684;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;1609.158;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;6f465391-8516-d0e4-c37d-8388a828318e;2023-07-25;Critical;41.47;30.11;UHF;mV;1657.804;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;21126
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;1619.311;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;8385
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;1628.175;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;8385
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;878.63;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;8385
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;899.817;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;8385
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;1117.332;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;8385
+TR-44;TR-44;;Urgent;3ec6d9ab-77ff-3ec4-0b92-c5762f9c4db2;2023-11-23;Critical;51.63;31.31;UHF;mV;1061.108;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;8385
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;2473.114;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;2698.915;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;1824.338;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;1573.479;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;1260.181;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;39662d62-4e84-2685-0494-4e2f75d0cbda;2023-05-23;Critical;56.25;32.33;UHF;mV;1234.999;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;47966
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;2590.512;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;50438
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;2226.074;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;50438
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;1723.469;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;50438
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;1764.72;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;50438
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;1459.348;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;50438
+TR-221;TR-221;;Urgent;b79e56ee-a237-8d7e-5abb-b3ddefbb55ea;2024-06-05;Critical;45.44;33.04;UHF;mV;1469.582;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;50438
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;193.785;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;186.977;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;195.804;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;184.703;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;309.596;Warning;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;faa92de9-d383-9822-45ba-d6133b7e2a75;2023-05-23;Warning;42.75;32.09;UHF;mV;277.602;Warning;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;707
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;320.496;Warning;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;1025
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;336.697;Warning;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;1025
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;256.674;Warning;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;1025
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;266.283;Warning;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;1025
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;440.313;Warning;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;1025
+TR-Melati-216;TR-Melati-216;;Urgent;be3c05f5-91e2-a929-2cb4-def0788d7995;2024-06-05;Warning;61.8;36.3;UHF;mV;499.334;Warning;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;1025
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;1186.133;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;1121.77;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;1522.178;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;1515.66;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;775.039;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;60d8159f-0754-d8c3-f7a8-651c2b74ca7a;2023-05-23;Critical;70.35;32.56;UHF;mV;784.185;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;8472
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;827.212;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;10529
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;903.452;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;10529
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;1509.08;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;10529
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;1356.926;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;10529
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;1200.085;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;10529
+TR-YDPK;TR-YDPK;;Urgent;353b4f00-bb03-40e9-a40a-7ab8fdeee0e0;2024-06-06;Critical;66.4;28.13;UHF;mV;1101.298;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;10529
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;523.909;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;526.44;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;506.744;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;487.02;Warning;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;692.898;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;cbc0b19a-6a23-082c-9da5-fc1db6d6713e;2023-05-03;Critical;47.18;29.24;UHF;mV;742.132;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;1836
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;793.353;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;5921
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;758.02;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;5921
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;823.375;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;5921
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;774.417;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;5921
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;1254.495;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;5921
+TR-34;TR-34;;Urgent;db19cd90-9d31-725c-8dc6-7cf8bbd0681c;2024-06-06;Critical;45.8;36.89;UHF;mV;1298.042;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;5921
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;1236.113;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;1256.034;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;910.814;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;938.029;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;889.892;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;31d03e44-dbd9-d697-5529-43283b6d0e17;2023-05-03;Critical;48.37;28.1;UHF;mV;985.2;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;6228
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;1309.845;Critical;50.0;200.0;500.0;UHF R-Top;R;Top;Partial Discharge;3;5105
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;1141.91;Critical;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Partial Discharge;3;5105
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;892.723;Critical;50.0;200.0;500.0;UHF S-Top;S;Top;Partial Discharge;3;5105
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;767.446;Critical;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Partial Discharge;3;5105
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;880.941;Critical;50.0;200.0;500.0;UHF T-Top;T;Top;Partial Discharge;3;5105
+TR-AOP-P4;TR-AOP-P4;;Urgent;d88c1dad-8718-3db6-0b11-b814fc30d670;2024-02-06;Critical;57.7;34.72;UHF;mV;791.88;Critical;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Partial Discharge;3;5105
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;12.845;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;14.039;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;21.907;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;21.324;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;25.873;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;bd58ba64-5247-cb6b-a322-149918f05e8d;2023-05-23;Normal;58.93;36.54;UHF;mV;29.177;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Thermal Cellulose;3;4
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;32.606;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Thermal Cellulose;3;2
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;36.944;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Thermal Cellulose;3;2
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;37.702;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Thermal Cellulose;3;2
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;35.282;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Thermal Cellulose;3;2
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;43.939;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Thermal Cellulose;3;2
+TR-1-HV-4;TR-1-HV-4;;High;9f6365aa-9320-45d7-f72c-ad5c37b78b61;2024-06-05;Normal;57.64;44.27;UHF;mV;49.6;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Thermal Cellulose;3;2
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;229.234;Warning;50.0;200.0;500.0;UHF R-Top;R;Top;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;211.875;Warning;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;137.016;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;139.179;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;150.494;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;399497cd-cf4a-0fd3-9345-2d41d65e7baa;2023-03-29;Warning;43.78;37.54;UHF;mV;140.248;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Mild Overheating Paper;3;85
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;155.53;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;147.3;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;99.186;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;98.492;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;84.464;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;7697fd34-5c45-d314-6e8f-b361da2634b2;2023-07-25;Watch;50.54;41.45;UHF;mV;78.846;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Mild Overheating Paper;2;2
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;134.766;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Mild Overheating Paper;2;4
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;132.741;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Mild Overheating Paper;2;4
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;68.805;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Mild Overheating Paper;2;4
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;70.068;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Mild Overheating Paper;2;4
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;111.258;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Mild Overheating Paper;2;4
+TR-311B;TR-311B;;High;fe54f519-7293-e38c-d222-43c89f3edaf4;2023-11-23;Watch;69.59;38.19;UHF;mV;103.274;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Mild Overheating Paper;2;4
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;195.012;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;2
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;196.129;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;2
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;160.872;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;2
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;153.83;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;2
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;145.711;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;2
+TR-312A;TR-312A;;High;18339477-132e-0181-c3c5-b6e48814aaf2;2023-03-29;Watch;40.17;31.59;UHF;mV;159.425;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;154.795;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;1;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;139.734;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;1;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;111.621;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;1;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;120.412;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;1;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;113.809;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;1;2
+TR-312A;TR-312A;;High;9037ffa6-5501-dd04-14dc-a3b089c73a5e;2023-07-25;Watch;48.42;28.45;UHF;mV;115.928;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;1;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;173.342;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;173.021;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;124.532;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;109.577;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;102.176;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;2
+TR-312A;TR-312A;;High;0defcf92-13b5-b700-c4df-470f806bfa92;2023-11-23;Watch;69.03;37.04;UHF;mV;96.959;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;2
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;14.618;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;16.216;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;19.746;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;20.118;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;16.643;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-36;TR-36;;Medium;9d5d4d70-323e-c4ac-9eee-595dd9e88eb7;2023-03-27;Normal;44.83;37.27;UHF;mV;13.829;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;8.522;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;8.166;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;11.868;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;10.651;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;9.71;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-36;TR-36;;Medium;9ca3a42c-cc7a-fa25-73fd-924679dace8c;2023-11-23;Normal;58.53;34.21;UHF;mV;8.523;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;39.069;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;38.074;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;27.041;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;26.036;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;21.088;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-41;TR-41;;Medium;8836d369-c29a-0c87-9e4e-89c5eacd276c;2023-03-27;Normal;59.44;32.85;UHF;mV;21.777;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;36.18;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;39.721;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;25.282;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;26.108;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;21.382;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-41;TR-41;;Medium;56569299-8e33-92ff-db0a-d5a6c238b206;2023-11-23;Normal;41.98;36.19;UHF;mV;24.098;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;9.755;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;8.535;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;11.08;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;11.613;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;9.659;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-42;TR-42;;Medium;8c997ea2-2803-0269-b26d-ecae5f6b5269;2023-03-27;Normal;57.54;34.32;UHF;mV;9.159;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;17.765;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;18.957;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;31.245;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;27.386;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;18.935;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-42;TR-42;;Medium;2fcdf93f-bcdd-15d8-e9f5-d5263b10deba;2023-11-23;Normal;56.86;32.88;UHF;mV;17.796;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;20.525;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;3
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;20.561;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;3
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;19.649;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;3
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;18.144;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;3
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;28.253;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;3
+TR-43;TR-43;;Medium;1cfcaa27-89dd-4ecb-32c0-0c8aebf1099a;2023-03-27;Normal;49.8;36.72;UHF;mV;29.851;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;3
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;11.18;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;10
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;11.707;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;10
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;11.629;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;10
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;12.107;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;10
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;16.119;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;10
+TR-43;TR-43;;Medium;0592bef1-0f31-72c0-9068-ae87910f77b2;2023-11-23;Normal;49.65;36.71;UHF;mV;15.599;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;10
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;33.144;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;29.486;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;18.108;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;21.265;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;14.628;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+TR-51A;TR-51A;;Medium;28fbfda0-9af0-557c-06c4-f6dfd0885fca;2016-11-18;Normal;52.92;30.84;UHF;mV;15.502;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;21.051;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;7
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;22.492;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;7
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;11.175;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;7
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;11.827;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;7
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;14.681;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;7
+TR-51A;TR-51A;;Medium;d2204413-1d8d-7fe8-3e2a-6fce6b817ccb;2020-09-18;Normal;55.33;34.4;UHF;mV;15.701;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;7
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;37.846;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;38.46;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;24.866;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;26.177;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;21.301;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;18c52ccc-d3e6-b730-0ce8-be308a7a4fdd;2023-03-27;Normal;49.32;32.68;UHF;mV;21.588;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;24.809;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;21.451;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;14.769;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;14.4;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;15.633;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-51A;TR-51A;;Medium;3cfa955e-f805-31b0-103b-a26994b368c6;2023-11-23;Normal;41.62;35.57;UHF;mV;14.434;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;16.351;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;272
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;14.642;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;272
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;18.278;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;272
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;18.202;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;272
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;12.854;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;272
+TR-51;TR-51;;Medium;af55236e-6469-af7d-28fb-a0e9eaec2850;2016-11-18;Normal;47.89;37.86;UHF;mV;13.989;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;272
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;23.741;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;25.762;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;28.733;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;30.439;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;26.261;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-51;TR-51;;Medium;6dce50f1-fce7-e0ea-3e62-709fc5badf3b;2020-09-18;Normal;40.99;31.96;UHF;mV;24.35;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;12.36;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;3
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;11.636;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;3
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;15.147;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;3
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;15.351;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;3
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;12.48;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;3
+TR-51;TR-51;;Medium;5245ccc2-9535-93d9-0878-33725488bf74;2023-03-27;Normal;47.96;28.79;UHF;mV;12.781;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;3
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;4.064;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;3.825;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;6.799;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;6.612;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;4.704;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-51;TR-51;;Medium;43b2b78f-0311-53f2-d74f-2d3a5e0ed293;2023-11-23;Normal;74.17;29.64;UHF;mV;5.338;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;9.885;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;1594
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;9.493;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;1594
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;7.383;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;1594
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;6.749;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;1594
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;11.585;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;1594
+TR-52;TR-52;;Medium;f510fb3b-03a7-922b-7a20-a756e06c6f88;2016-11-18;Normal;65.1;37.63;UHF;mV;11.419;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;1594
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;20.935;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;914
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;20.432;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;914
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;24.688;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;914
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;25.414;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;914
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;29.922;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;914
+TR-52;TR-52;;Medium;49661162-5912-843a-5b82-1b5386929d0e;2020-09-18;Normal;55.79;29.36;UHF;mV;26.628;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;914
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;8.337;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;9
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;8.17;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;9
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;7.71;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;9
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;7.0;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;9
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;9.36;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;9
+TR-52;TR-52;;Medium;4864ead4-653d-ef8d-62c0-300bb1b4bb4c;2023-03-27;Normal;62.92;33.39;UHF;mV;9.395;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;4.103;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;4.551;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;5.541;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;5.184;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;7.902;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;9
+TR-52;TR-52;;Medium;17d5a30f-f821-1017-4d1e-ab66e07eb684;2023-11-23;Normal;57.03;36.42;UHF;mV;8.854;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;9
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;21.018;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;22.499;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;13.78;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;14.501;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;13.992;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-56;TR-56;;Medium;4a3d4be2-6dd5-1bc4-6f40-694e06bb64a9;2023-03-27;Normal;40.24;30.97;UHF;mV;14.166;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;31.608;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;31.88;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;24.454;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;22.54;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;20.603;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-56;TR-56;;Medium;e917240f-2ea4-3f7f-6cd7-144137b0d304;2023-11-23;Normal;62.76;32.45;UHF;mV;18.242;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;19.522;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;20.718;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;38.299;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;37.704;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;17.98;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-57;TR-57;;Medium;8067c4c8-2cf2-80d9-2092-29e66ca09a40;2023-03-27;Normal;67.38;32.55;UHF;mV;19.403;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;5.027;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;3
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;4.384;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;3
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;5.593;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;3
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;5.566;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;3
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;4.499;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;3
+TR-57;TR-57;;Medium;0e76d3d3-8f49-ce0e-2a94-2cebc2fe2b42;2023-11-23;Normal;64.63;32.05;UHF;mV;4.153;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;3
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;17.637;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;16.994;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;28.261;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;29.993;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;21.365;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;610b8651-fd7e-4b18-9e35-afa3df6b3e20;2023-03-27;Normal;59.64;34.84;UHF;mV;20.909;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;22.81;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;25.946;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;30.78;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;34.114;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;17.375;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-TRANSPORT-210;TR-TRANSPORT-210;;Medium;ad665c2f-0eb3-deaa-d276-af35f947a10d;2023-11-23;Normal;66.59;28.33;UHF;mV;20.454;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;11.558;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;11.821;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;8.221;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;7.371;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;7.286;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;6336bc18-7fa6-c583-242c-2ff1014cd959;2023-03-27;Normal;71.91;32.54;UHF;mV;8.241;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;5.752;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;5.376;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;4.482;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;4.184;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;4.517;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-PEPAYA-214;TR-PEPAYA-214;;Medium;578d1280-b1f7-4588-2352-369245ea3fb5;2023-11-23;Normal;47.25;30.94;UHF;mV;4.137;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;25.052;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;23.769;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;30.758;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;33.189;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;17.122;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;46be4736-0693-c5f7-044f-4b0e5a3c72d5;2023-03-27;Normal;50.03;28.08;UHF;mV;18.164;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;5.783;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;5.893;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;9.51;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;8.562;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;4.455;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-PEPAYA-215;TR-PEPAYA-215;;Medium;18b1cfe7-e8cb-7ae5-c9c3-eb3f19bbd3ed;2023-11-23;Normal;40.97;32.68;UHF;mV;5.148;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;9.238;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;10.197;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;14.09;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;14.284;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;8.28;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;7ab29bf0-f083-5820-5825-8493a33926e4;2023-03-27;Normal;61.94;34.0;UHF;mV;7.997;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;3
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;9.639;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;10.268;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;17.015;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;18.13;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;9.095;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-DIKLAT;TR-DIKLAT;;Medium;4e34b939-775c-8f68-2de5-6521e6bd651d;2023-11-23;Normal;52.94;37.45;UHF;mV;9.149;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;3.732;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;3.837;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;4.464;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;5.02;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;7.321;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;d83c2af4-35e4-4ad1-6b78-b5cf62b48c80;2023-03-27;Normal;64.68;35.88;UHF;mV;7.537;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;4.942;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;5.872;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;4.215;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;4.361;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;8.807;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F6P-2001MVTR;F6P-2001MVTR;;Medium;67d700b8-bc58-166a-1403-8c79a58a3670;2023-11-23;Normal;49.02;30.83;UHF;mV;8.697;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;31.173;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;33.415;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;22.709;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;23.85;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;19.924;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;bbf70d6d-b61e-0c18-15df-adb3fd69a7a8;2023-03-27;Normal;74.87;30.18;UHF;mV;19.222;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;24
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;22.777;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;38
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;21.673;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;38
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;16.735;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;38
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;17.292;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;38
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;14.15;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;38
+F6P-1001LVTR;F6P-1001LVTR;;Medium;42d1c9d2-cf63-21ac-d566-aedb45d38173;2023-11-23;Normal;51.85;37.03;UHF;mV;15.041;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;38
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;6.017;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;5.658;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;6.988;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;6.897;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;4.32;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;6630c5c5-a36e-92cf-59ff-9ed9d92708b6;2023-03-27;Normal;57.25;34.93;UHF;mV;4.908;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;8
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;18.108;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;16
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;20.023;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;16
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;29.599;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;16
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;26.41;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;16
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;18.074;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;16
+F6P-2001LVTR;F6P-2001LVTR;;Medium;8a95087a-b9f4-d441-d253-417c385dd5b4;2023-11-23;Normal;46.93;29.79;UHF;mV;16.407;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;16
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;123.613;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;3;362
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;110.244;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;3;362
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;92.818;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;3;362
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;98.856;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;3;362
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;148.955;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;3;362
+2N-TR-002;2N-TR-002;;High;671947d5-ccb1-0850-efd6-c3b40b979095;2023-05-03;Watch;64.26;29.65;UHF;mV;145.177;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;3;362
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;114.502;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;10
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;130.121;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;10
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;114.397;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;10
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;113.66;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;10
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;141.747;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;10
+2N-TR-002;2N-TR-002;;High;eb4d1183-eb5a-c446-68f6-c7e6aadb7ed6;2024-02-07;Watch;64.33;36.27;UHF;mV;161.933;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;10
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;31.878;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;30.175;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;20.571;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;19.732;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;21.558;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;7c489b3c-80a1-f3f3-6198-5be0508ee297;2023-05-03;Normal;69.51;30.11;UHF;mV;18.614;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;89
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;9.119;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;74
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;8.384;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;74
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;7.596;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;74
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;6.666;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;74
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;6.66;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;74
+GP-3001LVTR;GP-3001LVTR;;Medium;4b789c40-2c33-b477-bcfc-beb0177d9ef8;2024-02-06;Normal;56.53;30.7;UHF;mV;7.288;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;74
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;28.202;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;32.748;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;16.922;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;15.265;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;25.666;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;19660265-0691-abad-22cb-6ebe6c6a1857;2023-03-27;Normal;62.34;35.32;UHF;mV;24.516;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;14.828;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;13.067;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;8.111;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;8.251;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;8.378;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F6P-3001MVTR;F6P-3001MVTR;;Medium;a5b89b62-cd69-f871-5bc7-283927b904ea;2024-02-06;Normal;55.96;29.69;UHF;mV;9.207;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;12.144;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;12.098;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;16.881;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;17.157;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;14.604;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;89ec7923-9b0f-8fe6-3e4b-e207718d1234;2023-05-03;Normal;41.62;30.46;UHF;mV;14.237;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;10.619;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;10.794;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;17.204;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;17.169;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;13.593;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+GP-3002LVTR;GP-3002LVTR;;Medium;40852aa9-4ba5-a9b7-76bb-c374ab8b73b3;2024-02-06;Normal;73.74;33.57;UHF;mV;12.681;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;11.92;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;11.875;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;13.173;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;11.671;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;18.267;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;89bcada5-848c-918a-e4ab-3de350f06fa6;2023-05-03;Normal;60.95;36.43;UHF;mV;19.216;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;14.288;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;14.211;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;15.881;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;18.214;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;26.145;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+GP-3002MVTR;GP-3002MVTR;;Medium;0f316613-4dcf-ae5c-2710-66d7dbc7ecd4;2024-02-06;Normal;57.24;29.29;UHF;mV;22.628;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;14.364;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;14.674;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;9.385;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;9.929;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;10.463;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;2338de7e-0acb-ca2b-59c4-1fdebc3ec63e;2023-05-03;Normal;52.55;35.76;UHF;mV;11.521;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;7.382;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;7
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;7.572;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;7
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;4.842;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;7
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;4.308;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;7
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;4.97;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;7
+3N-TR-002;3N-TR-002;;Medium;4db32882-921d-92d0-791a-b9d5642710b9;2024-02-07;Normal;43.31;33.88;UHF;mV;4.277;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;7
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;17.95;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;21.303;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;33.58;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;29.529;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;21.781;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;6b3d0c4f-3fc5-863c-ceb6-086d935d7216;2023-05-03;Normal;62.37;34.29;UHF;mV;22.212;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;27
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;5.242;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;19
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;5.426;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;19
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;11.29;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;19
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;10.944;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;19
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;6.049;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;19
+TR-317-Rasamala;TR-317-Rasamala;;Medium;2531637b-ac63-a9b2-4350-ea212278b21c;2024-02-06;Normal;50.52;32.33;UHF;mV;6.234;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;19
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;24.913;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;76
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;22.912;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;76
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;14.851;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;76
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;16.019;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;76
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;13.326;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;76
+TR-32;TR-32;;Medium;441e012a-e365-1b8c-9cfa-9bf7dc233af2;2023-05-03;Normal;73.8;31.78;UHF;mV;13.58;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;76
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;24.7;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;66
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;23.391;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;66
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;15.125;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;66
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;16.791;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;66
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;13.467;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;66
+TR-32;TR-32;;Medium;a5168e82-c219-53aa-8bbd-42bf3b9afe40;2024-02-06;Normal;44.34;29.92;UHF;mV;12.489;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;66
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;6.05;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;6.31;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;4.914;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;4.546;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;3.874;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;9d8fd697-5183-acb0-7b24-e490066d6fe0;2023-05-03;Normal;41.92;35.88;UHF;mV;4.631;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;22.849;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;22.817;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;15.378;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;15.305;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;14.882;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-325-Rasamala;TR-325-Rasamala;;Medium;1dbe7465-a549-ea54-b4cf-bfbe7c9468ff;2024-02-06;Normal;41.24;32.76;UHF;mV;16.463;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;34.521;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;31.917;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;17.087;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;18.532;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;17.018;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;44fef35e-9c5e-0a14-e426-cb53e4535d3e;2023-05-04;Normal;40.21;28.16;UHF;mV;17.934;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;5.874;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;5.743;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;3.429;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;3.624;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;3.238;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-329-Gurame;TR-329-Gurame;;Medium;176548b9-8200-f800-c828-da27a17d9205;2024-02-07;Normal;51.69;32.78;UHF;mV;3.572;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;2.929;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;4
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;3.015;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;4
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;5.795;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;4
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;6.173;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;4
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;3.775;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;4
+TR-45;TR-45;;Medium;4141a578-a9d9-3fba-6971-1c5e1ece171c;2023-05-03;Normal;69.55;35.14;UHF;mV;3.462;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;4
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;17.334;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;16.266;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;20.597;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;19.929;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;13.767;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+TR-45;TR-45;;Medium;261e8dc2-0062-5edc-2c11-356d17cd1777;2024-02-06;Normal;41.3;35.5;UHF;mV;14.466;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;31.227;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;7
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;27.619;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;7
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;25.151;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;7
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;25.081;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;7
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;40.146;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;7
+TR-46;TR-46;;Medium;774d3ac4-e5f3-3c00-ae0b-06eb9dffabda;2023-05-03;Normal;69.31;35.22;UHF;mV;34.862;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;7
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;19.817;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;20.432;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;16.577;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;15.306;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;25.167;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+TR-46;TR-46;;Medium;ab6528e1-aff7-b423-ae3b-7257c87cf603;2024-02-06;Normal;47.53;34.42;UHF;mV;28.337;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;10.923;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;2
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;12.132;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;2
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;7.62;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;2
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;7.401;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;2
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;7.291;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;2
+TR-47;TR-47;;Medium;983e0a7c-c10d-7a8f-22f9-33fb4bc785bf;2023-05-03;Normal;48.06;34.73;UHF;mV;6.139;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;24.612;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;29.038;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;14.724;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;14.076;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;15.8;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-47;TR-47;;Medium;f0953d60-b306-6daa-c840-ba7b553ed46e;2024-02-06;Normal;51.56;37.29;UHF;mV;15.305;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;11.937;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;12.774;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;16.147;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;17.081;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;11.21;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;2
+TR-48;TR-48;;Medium;50c50aac-d727-260c-b2e7-8178592bbaa1;2023-05-03;Normal;44.73;36.55;UHF;mV;10.637;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;2
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;19.633;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;16
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;21.33;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;16
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;35.171;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;16
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;31.977;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;16
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;19.576;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;16
+TR-48;TR-48;;Medium;fa3484e5-bdb6-5820-f840-db19f4295b51;2024-02-06;Normal;65.37;37.81;UHF;mV;22.348;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;16
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;11.22;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;14
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;11.264;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;14
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;8.556;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;14
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;7.669;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;14
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;7.527;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;14
+TR-35;TR-35;;Medium;445d9671-02f5-53b7-4614-5bc00bcf3c9c;2023-05-23;Normal;72.09;28.37;UHF;mV;7.215;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;14
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;19.804;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;12
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;18.712;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;12
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;13.739;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;12
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;14.013;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;12
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;9.583;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;12
+TR-35;TR-35;;Medium;12209d79-59cc-8ba4-54bf-4ae4490b3d96;2024-02-07;Normal;55.75;28.6;UHF;mV;11.155;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;12
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;27.106;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;24.509;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;24.633;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;21.701;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;32.45;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;8d3e4a15-3371-5fbb-e066-c698ce2a4e0c;2023-05-23;Normal;41.86;32.47;UHF;mV;34.801;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;7.288;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;7.76;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;9.804;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;10.053;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;11.191;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-1-HV-1;TR-1-HV-1;;Medium;42dee478-7bee-01cb-92d6-cdedc353ab8b;2024-06-05;Normal;40.9;31.35;UHF;mV;10.917;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;36.523;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;31.715;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;19.69;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;20.258;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;28.94;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;07743d5b-4a0a-a5bc-3493-1688ce258cfb;2023-05-23;Normal;45.18;33.16;UHF;mV;24.383;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;10
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;10.584;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;10.132;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;8.801;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;9.384;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;7.98;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-1-HV-2;TR-1-HV-2;;Medium;327c5158-3bdb-9151-0ae8-a12548fc957d;2024-06-05;Normal;68.1;33.98;UHF;mV;7.807;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;9.356;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;9.83;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;15.742;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;14.5;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;9.319;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;38d15726-cf3c-96c3-bca6-fdf10b1c7162;2023-05-23;Normal;56.66;29.84;UHF;mV;9.884;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;27.606;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;28.659;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;36.518;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;35.09;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;26.84;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-1-HV-3;TR-1-HV-3;;Medium;4afe9317-27fa-1316-a569-c9a813070b35;2024-06-05;Normal;48.37;35.94;UHF;mV;24.985;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;13.425;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;13.178;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;8.951;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;9.039;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;10.156;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;5cebdbb8-3a5d-ccc3-77bb-59840d9fcf11;2023-05-03;Normal;40.99;29.09;UHF;mV;10.311;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;7.937;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;7.064;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;3.743;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;3.573;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;3.707;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-328-Bawal;TR-328-Bawal;;Medium;53f6e036-81cd-0098-673c-b1bd036cfb29;2024-06-06;Normal;58.33;37.56;UHF;mV;3.639;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;4.216;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;3.78;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;3.797;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;4.065;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;5.428;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;bcbbefcc-7c99-7cd2-21c7-55f11829c57b;2023-05-23;Normal;70.72;32.46;UHF;mV;4.77;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;4
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;10.974;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;11.486;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;9.062;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;9.737;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;12.421;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-Selasih-314E;TR-Selasih-314E;;Medium;f42491bb-e01c-1db8-1f01-56a15b873878;2024-06-06;Normal;57.39;32.34;UHF;mV;12.75;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;26.614;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;22.983;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;23.521;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;23.338;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;32.015;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;b4f2ad06-30db-5211-f508-87c3b393828a;2023-05-23;Normal;41.4;32.51;UHF;mV;33.622;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;21
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;12.52;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;10.861;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;11.817;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;12.902;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;17.79;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-REL-A;TR-REL-A;;Medium;7767f8c6-f567-f546-c6b4-43c3a2c03a7b;2024-06-06;Normal;56.32;31.27;UHF;mV;15.385;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;35.057;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;34.844;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;21.079;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;21.211;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;29.483;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;cba98b60-da71-ba50-c63d-84abd8e5bfeb;2023-05-23;Normal;52.8;35.65;UHF;mV;25.513;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;25
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;19.136;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;16.735;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;11.803;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;11.456;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;10.647;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-REL-B;TR-REL-B;;Medium;2f347c65-a907-563c-097b-d8f329819318;2024-06-06;Normal;42.76;30.2;UHF;mV;12.318;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;26.477;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;29.722;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;37.486;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;35.948;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;24.021;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;f369d930-6154-752c-705c-a5d1b4fd6eb0;2023-05-23;Normal;44.07;28.88;UHF;mV;27.956;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;19
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;16.741;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;18.148;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;27.852;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;32.001;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;20.522;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-REL-C;TR-REL-C;;Medium;745711ca-58a4-7658-08ab-fdcc32af404d;2024-06-06;Normal;58.3;31.66;UHF;mV;20.202;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;9.177;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;9.257;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;11.007;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;11.096;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;10.474;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;28de3aff-4a59-23e6-3899-39c3a61bdf44;2023-05-23;Normal;54.16;30.99;UHF;mV;10.99;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;86
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;20.267;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;71
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;20.549;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;71
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;32.354;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;71
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;31.961;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;71
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;17.91;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;71
+TR-Peresmian-1;TR-Peresmian-1;;Medium;cd0fd4ce-ff0e-3f78-ae89-4f333eb992a1;2024-06-05;Normal;68.27;32.97;UHF;mV;19.817;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;71
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;11.795;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;11.233;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;12.777;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;12.787;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;20.55;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;4446210e-6f10-23f6-9157-6a15380cbc19;2023-05-23;Normal;65.84;31.37;UHF;mV;20.403;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;9
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;17.313;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;18.735;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;16.012;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;16.924;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;31.406;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-Peresmian-2;TR-Peresmian-2;;Medium;6ddc9d3d-3836-237d-9f97-7746658b7181;2024-06-05;Normal;59.51;35.52;UHF;mV;30.408;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;4.559;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;5.061;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;8.45;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;9.706;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;6.325;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;18254494-fd0a-c749-a773-9187357c706e;2023-05-03;Normal;69.06;37.96;UHF;mV;5.846;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;5.83;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;6.383;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;10.209;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;10.3;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;5.086;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+TR-314D-Gandaria;TR-314D-Gandaria;;Medium;a759e3cc-e8a1-9dc7-5936-14b5a73428e2;2024-06-06;Normal;64.16;37.77;UHF;mV;5.739;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;8.771;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;9.58;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;16.776;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;14.836;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;10.513;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;e13d61c5-978f-0dfd-5e33-8e7e64f94ef8;2016-11-18;Normal;42.58;36.03;UHF;mV;10.457;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;4.264;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;4.656;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;6.778;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;7.057;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;4.55;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;3bf468ba-ee48-5b08-0c0a-10644102cedd;2020-09-17;Normal;40.33;37.69;UHF;mV;4.524;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;27
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;8.073;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;9.253;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;12.43;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;12.215;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;11.009;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;d69d4046-6d0e-dc97-a953-178e0aa35a7b;2023-05-23;Normal;57.28;34.86;UHF;mV;10.956;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;11
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;20.074;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;12
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;18.038;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;12
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;31.433;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;12
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;30.965;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;12
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;24.947;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;12
+F5O-TR59;F5O-TR59;;Medium;69402386-7e4a-82a3-97f4-28281e2964a3;2024-06-06;Normal;69.49;29.98;UHF;mV;25.122;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;7.276;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;7.189;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;11.975;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;11.864;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;8.126;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;0db0b8cc-d49d-9e65-9d70-8f80bbdd1ddd;2016-11-18;Normal;47.08;35.15;UHF;mV;7.248;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;12
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;25.597;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;29.098;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;37.972;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;40.057;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;22.471;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;dfab8fa4-88e8-7f75-a56e-57610b6525ad;2020-09-17;Normal;72.16;36.12;UHF;mV;20.187;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;54
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;5.195;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;4.783;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;9.334;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;10.227;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;5.296;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;8f7afd42-7394-224c-4db6-997fccf09e58;2023-05-23;Normal;40.44;28.99;UHF;mV;4.923;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;2;2
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;5.485;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;19
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;5.041;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;19
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;8.712;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;19
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;9.463;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;19
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;4.89;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;19
+F5O-TR512;F5O-TR512;;Medium;f24c97ca-2f5c-bae3-4aa3-05f9dc642572;2024-06-05;Normal;53.91;30.19;UHF;mV;4.76;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;19
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;21.878;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;23.458;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;20.835;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;21.008;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;28.559;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;aed48e56-ea88-6b1c-bdac-e22b40a2dd43;2016-11-18;Normal;73.59;30.68;UHF;mV;28.728;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;5
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;5.769;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;6.085;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;8.586;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;7.8;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;11.93;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;af36ac02-c2ee-39fb-8551-3efe818994dd;2020-09-17;Normal;56.09;29.62;UHF;mV;10.848;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;13
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;3.739;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;3.745;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;4.514;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;4.555;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;5.867;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;0ee762d0-c452-28af-64e9-56ba4be12b2c;2023-05-23;Normal;69.73;37.08;UHF;mV;6.494;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;24.481;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;21.315;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;29.928;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;26.968;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;35.811;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;2
+F5O-TR510;F5O-TR510;;Medium;4ff29718-e362-fa24-ab52-e1d77cbd7df0;2024-06-05;Normal;64.24;30.04;UHF;mV;33.331;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;2
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;10.778;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Normal;1;12
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;9.949;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Normal;1;12
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;15.206;Normal;50.0;200.0;500.0;UHF S-Top;S;Top;Normal;1;12
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;15.918;Normal;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Normal;1;12
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;10.437;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Normal;1;12
+2N-TR-001;2N-TR-001;;Medium;e65f2a37-b6ce-15a3-2194-e41315e518f9;2024-06-07;Normal;57.26;30.53;UHF;mV;11.194;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Normal;1;12
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;131.546;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;150.494;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;196.26;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;181.528;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;113.956;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;28ff05e9-7697-9a90-cfbb-dcfe177cc573;2023-03-27;Watch;46.25;34.29;UHF;mV;115.207;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;195
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;123.414;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;121.936;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;203.072;Warning;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;177.835;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;131.36;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;95eedd9b-2f80-a5ae-24d7-759c265fb397;2023-07-25;Warning;65.37;33.99;UHF;mV;135.249;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;3;218
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;89.593;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;185
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;103.732;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;185
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;135.099;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;185
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;149.737;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;185
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;76.733;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;185
+TR-BANDENG-327;TR-BANDENG-327;;High;ae635c94-14c1-f35f-199c-9574696ff9b3;2023-11-23;Watch;48.91;34.27;UHF;mV;82.674;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;185
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;153.126;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;150.245;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;98.743;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;103.123;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;85.951;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;c1b7f0d7-f070-500a-8f90-cc00503814ca;2023-05-03;Watch;51.22;35.94;UHF;mV;81.573;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;3;221
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;89.49;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;211
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;91.507;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;211
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;61.223;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;211
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;63.626;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;211
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;49.805;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;211
+GP-3001ELVTR;GP-3001ELVTR;;High;d3366798-f16e-d17a-2e6c-b072024656cc;2023-11-23;Watch;66.37;28.98;UHF;mV;46.969;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;211
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;83.183;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;3;2
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;73.538;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;3;2
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;148.805;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;3;2
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;134.342;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;3;2
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;94.834;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;3;2
+1N-TR-002;1N-TR-002;;High;69220c71-f240-4a77-e5e2-4d403c882a14;2023-05-03;Watch;68.83;32.96;UHF;mV;91.391;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;3;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;55.376;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Attention;2;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;61.19;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Attention;2;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;110.933;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Attention;2;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;95.428;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Attention;2;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;61.313;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Attention;2;2
+1N-TR-002;1N-TR-002;;High;cd8ff5de-67d7-e966-4761-63cf1b2705db;2024-06-07;Watch;56.42;36.87;UHF;mV;70.376;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Attention;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;66.038;Watch;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;60.611;Watch;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;86.974;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;78.063;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;54.046;Watch;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;6bf2cc97-9e4e-443a-cd0e-b507e4992265;2023-05-03;Watch;40.39;34.61;UHF;mV;58.324;Watch;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;41.526;Normal;50.0;200.0;500.0;UHF R-Top;R;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;35.883;Normal;50.0;200.0;500.0;UHF R-Bottom;R;Bottom;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;80.513;Watch;50.0;200.0;500.0;UHF S-Top;S;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;75.991;Watch;50.0;200.0;500.0;UHF S-Bottom;S;Bottom;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;47.161;Normal;50.0;200.0;500.0;UHF T-Top;T;Top;Stray Gassing;2;2
+TR-45B;TR-45B;;Medium;71c64c1e-f841-7f4e-00c2-2470d4dcf17e;2024-02-06;Watch;67.99;33.35;UHF;mV;48.939;Normal;50.0;200.0;500.0;UHF T-Bottom;T;Bottom;Stray Gassing;2;2
