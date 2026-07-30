@@ -71,19 +71,17 @@ function useSummary() {
 
 function StatChip({ label, value, colorVar }: { label: string; value: string; colorVar?: string }) {
   return (
-    <div className="rounded-xl border border-border/70 bg-card px-5 py-4 flex flex-col gap-2 shadow-sm">
+    <div className="rounded-md border border-border/70 bg-card px-4 py-3 flex flex-col gap-1.5">
       <div className="flex items-center gap-2">
         <span
-          className="size-2 rounded-full"
+          className="size-1.5 rounded-full"
           style={{ backgroundColor: colorVar ?? "var(--fault-normal)" }}
         />
         <span className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium">
           {label}
         </span>
       </div>
-      <span className="font-display text-3xl sm:text-4xl font-bold tabular-nums leading-none">
-        {value}
-      </span>
+      <span className="font-display text-2xl font-semibold tabular-nums">{value}</span>
     </div>
   );
 }
