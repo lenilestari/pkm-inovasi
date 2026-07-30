@@ -1,0 +1,13 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Build artifact intermediate (regenerate via _export_artifacts.py)
+webapp_artifacts/
+
+# Query dump scratch files
+_SELECT_*.csv
+
+# OS/editor
+.DS_Store
