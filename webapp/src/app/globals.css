@@ -55,9 +55,11 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-/* Tema terang (default) -- bawaan shadcn. */
+/* Tema terang (default) -- bawaan shadcn, tapi background dibikin sedikit abu-abu supaya
+   card (putih polos) kelihatan menonjol -- shadcn default aslinya bg & card sama-sama putih
+   polos jadi menyatu tanpa kontras. */
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(0.97 0.002 240);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
