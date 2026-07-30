@@ -12,16 +12,8 @@ import {
   YAxis,
 } from "recharts";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table";
+import { FaultGlossary } from "@/components/fault-glossary";
 import dataset from "@/lib/dataset.json";
 
 interface Row {
@@ -41,21 +33,26 @@ interface Row {
 
 const rows = dataset.rows as unknown as Row[];
 
-const FAULT_COLORS: Record<string, string> = {
-  "Partial Discharge": "#dc2626",
-  "Stray Gassing": "#f59e0b",
-  "Thermal Cellulose": "#ea580c",
-  "Thermal Fault (Oil)": "#eab308",
-  "Mild Overheating Paper": "#f97316",
-  Attention: "#0ea5e9",
-  Normal: "#16a34a",
+const FAULT_COLOR_VAR: Record<string, string> = {
+  "Partial Discharge": "var(--fault-pd)",
+  "Stray Gassing": "var(--fault-stray)",
+  "Thermal Cellulose": "var(--fault-thermal-cellulose)",
+  "Thermal Fault (Oil)": "var(--fault-thermal-oil)",
+  "Mild Overheating Paper": "var(--fault-mild)",
+  Attention: "var(--fault-attention)",
+  Normal: "var(--fault-normal)",
 };
+
+function faultColor(fault: string) {
+  return FAULT_COLOR_VAR[fault] ?? "var(--muted-foreground)";
+}
 
 function useSummary() {
   return useMemo(() => {
     const nAssets = new Set(rows.map((r) => r.asset_id)).size;
     const nSamples = rows.length;
     const matchRate = rows.filter((r) => r.status_match).length / nSamples;
+    const nCritical = rows.filter((r) => r.lab_fault_type === "Partial Discharge").length;
 
     const byFault = new Map<string, { sum: number; count: number }>();
     for (const r of rows) {
@@ -68,12 +65,29 @@ function useSummary() {
       .map(([fault, { sum, count }]) => ({ fault, mean: sum / count, count }))
       .sort((a, b) => a.mean - b.mean);
 
-    return { nAssets, nSamples, matchRate, chartData };
+    return { nAssets, nSamples, matchRate, chartData, nCritical };
   }, []);
 }
 
+function StatChip({ label, value, colorVar }: { label: string; value: string; colorVar?: string }) {
+  return (
+    <div className="rounded-md border border-border/70 bg-card px-4 py-3 flex flex-col gap-1.5">
+      <div className="flex items-center gap-2">
+        <span
+          className="size-1.5 rounded-full"
+          style={{ backgroundColor: colorVar ?? "var(--fault-normal)" }}
+        />
+        <span className="text-[11px] uppercase tracking-wider text-muted-foreground font-medium">
+          {label}
+        </span>
+      </div>
+      <span className="font-display text-2xl font-semibold tabular-nums">{value}</span>
+    </div>
+  );
+}
+
 export function Dashboard() {
-  const { nAssets, nSamples, matchRate, chartData } = useSummary();
+  const { nAssets, nSamples, matchRate, chartData, nCritical } = useSummary();
   const [filter, setFilter] = useState("");
 
   const filteredRows = useMemo(() => {
@@ -86,55 +100,61 @@ export function Dashboard() {
 
   return (
     <div className="space-y-6">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <Card>
-          <CardHeader className="pb-2">
-            <CardDescription>Aset Trafo</CardDescription>
-            <CardTitle className="text-3xl">{nAssets}</CardTitle>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardDescription>Total Sampel</CardDescription>
-            <CardTitle className="text-3xl">{nSamples}</CardTitle>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardDescription>Rule Engine Match</CardDescription>
-            <CardTitle className="text-3xl">{(matchRate * 100).toFixed(0)}%</CardTitle>
-          </CardHeader>
-        </Card>
-        <Card>
-          <CardHeader className="pb-2">
-            <CardDescription>Kategori Fault</CardDescription>
-            <CardTitle className="text-3xl">{chartData.length}</CardTitle>
-          </CardHeader>
-        </Card>
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+        <StatChip label="Aset Trafo" value={String(nAssets)} />
+        <StatChip label="Total Sampel" value={String(nSamples)} />
+        <StatChip
+          label="Rule Engine Match"
+          value={`${(matchRate * 100).toFixed(0)}%`}
+          colorVar="var(--fault-thermal-oil)"
+        />
+        <StatChip label="Kategori Fault" value={String(chartData.length)} />
+        <StatChip
+          label="Partial Discharge"
+          value={String(nCritical)}
+          colorVar="var(--fault-pd)"
+        />
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle>Rata-rata Composite Risk Score per Kategori Fault</CardTitle>
+          <CardTitle className="font-display">Composite Risk Score per Kategori Fault</CardTitle>
           <CardDescription>
-            Makin rendah (ke kiri) = makin dianggap anomali oleh Isolation Forest. Urutan yang
-            benar: Partial Discharge paling anomali, Normal paling tidak anomali.
+            Rata-rata <code className="font-data">anomaly_score</code> dari Isolation Forest --
+            makin rendah (kiri) makin dianggap anomali. Urutan yang benar: Partial Discharge
+            paling anomali, Normal paling tidak anomali.
           </CardDescription>
         </CardHeader>
         <CardContent>
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">
               <BarChart data={chartData} layout="vertical" margin={{ left: 24 }}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis type="number" />
-                <YAxis type="category" dataKey="fault" width={160} tick={{ fontSize: 12 }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" horizontal={false} />
+                <XAxis
+                  type="number"
+                  stroke="var(--muted-foreground)"
+                  tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                />
+                <YAxis
+                  type="category"
+                  dataKey="fault"
+                  width={160}
+                  stroke="var(--muted-foreground)"
+                  tick={{ fontSize: 12 }}
+                />
                 <Tooltip
+                  contentStyle={{
+                    background: "var(--popover)",
+                    border: "1px solid var(--border)",
+                    borderRadius: 6,
+                    fontSize: 12,
+                  }}
                   formatter={(value) => [Number(value).toFixed(4), "mean anomaly_score"]}
                   labelFormatter={(label) => `Fault type: ${label}`}
                 />
-                <Bar dataKey="mean" name="mean anomaly_score" radius={[0, 4, 4, 0]}>
+                <Bar dataKey="mean" name="mean anomaly_score" radius={[0, 3, 3, 0]}>
                   {chartData.map((d) => (
-                    <Cell key={d.fault} fill={FAULT_COLORS[d.fault] ?? "#64748b"} />
+                    <Cell key={d.fault} fill={faultColor(d.fault)} />
                   ))}
                 </Bar>
               </BarChart>
@@ -143,9 +163,11 @@ export function Dashboard() {
         </CardContent>
       </Card>
 
+      <FaultGlossary />
+
       <Card>
         <CardHeader>
-          <CardTitle>Data 69 Aset (161 sampel)</CardTitle>
+          <CardTitle className="font-display">Log Data -- 69 Aset (161 Sampel)</CardTitle>
           <CardDescription>
             Ditranskrip verbatim dari 3 laporan lab PT Petrolab Services (Des 2023, Mar 2024, Jul
             2024).
@@ -154,47 +176,65 @@ export function Dashboard() {
             placeholder="Cari asset_id atau fault type..."
             value={filter}
             onChange={(e) => setFilter(e.target.value)}
-            className="mt-2 max-w-sm"
+            className="mt-2 max-w-sm font-data"
           />
         </CardHeader>
-        <CardContent>
-          <div className="max-h-[480px] overflow-auto rounded-md border">
-            <Table>
-              <TableHeader className="sticky top-0 bg-card">
-                <TableRow>
-                  <TableHead>Asset</TableHead>
-                  <TableHead>Tanggal</TableHead>
-                  <TableHead>Lab</TableHead>
-                  <TableHead>Rule Engine</TableHead>
-                  <TableHead>Match</TableHead>
-                  <TableHead className="text-right">Anomaly Score</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
+        <CardContent className="px-0 sm:px-6">
+          <div className="max-h-120 overflow-auto rounded-md border border-border/70">
+            <table className="w-full text-sm font-data">
+              <thead className="sticky top-0 bg-card text-[11px] uppercase tracking-wider text-muted-foreground">
+                <tr className="border-b border-border/70">
+                  <th className="text-left font-medium px-3 py-2">Asset</th>
+                  <th className="text-left font-medium px-3 py-2">Tanggal</th>
+                  <th className="text-left font-medium px-3 py-2">Lab</th>
+                  <th className="text-left font-medium px-3 py-2">Rule Engine</th>
+                  <th className="text-left font-medium px-3 py-2">Match</th>
+                  <th className="text-right font-medium px-3 py-2">Score</th>
+                </tr>
+              </thead>
+              <tbody>
                 {filteredRows.map((r, i) => (
-                  <TableRow key={`${r.asset_id}-${r.sample_date}-${i}`}>
-                    <TableCell className="font-medium">{r.asset_id}</TableCell>
-                    <TableCell>{r.sample_date}</TableCell>
-                    <TableCell>
-                      <Badge variant="outline" style={{ borderColor: FAULT_COLORS[r.lab_fault_type] }}>
+                  <tr
+                    key={`${r.asset_id}-${r.sample_date}-${i}`}
+                    className="border-b border-border/40 last:border-0"
+                    style={{ borderLeft: `3px solid ${faultColor(r.lab_fault_type)}` }}
+                  >
+                    <td className="px-3 py-2 font-medium whitespace-nowrap">{r.asset_id}</td>
+                    <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
+                      {r.sample_date}
+                    </td>
+                    <td className="px-3 py-2 whitespace-nowrap">
+                      <span
+                        className="inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-xs font-sans"
+                        style={{
+                          color: faultColor(r.lab_fault_type),
+                          backgroundColor: "color-mix(in oklch, currentColor 14%, transparent)",
+                        }}
+                      >
+                        <span
+                          className="size-1.5 rounded-full"
+                          style={{ backgroundColor: faultColor(r.lab_fault_type) }}
+                        />
                         {r.lab_fault_type}
-                      </Badge>
-                    </TableCell>
-                    <TableCell>{r.rule_fault_type}</TableCell>
-                    <TableCell>
+                      </span>
+                    </td>
+                    <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
+                      {r.rule_fault_type}
+                    </td>
+                    <td className="px-3 py-2 whitespace-nowrap">
                       {r.status_match ? (
-                        <Badge variant="secondary">cocok</Badge>
+                        <span style={{ color: "var(--fault-normal)" }}>cocok</span>
                       ) : (
-                        <Badge variant="destructive">beda</Badge>
+                        <span style={{ color: "var(--fault-pd)" }}>beda</span>
                       )}
-                    </TableCell>
-                    <TableCell className="text-right font-mono">
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
                       {r.anomaly_score_raw.toFixed(4)}
-                    </TableCell>
-                  </TableRow>
+                    </td>
+                  </tr>
                 ))}
-              </TableBody>
-            </Table>
+              </tbody>
+            </table>
           </div>
         </CardContent>
       </Card>

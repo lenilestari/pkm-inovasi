@@ -7,9 +7,16 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-data);
+  --font-heading: var(--font-display);
+  --color-fault-normal: var(--fault-normal);
+  --color-fault-stray: var(--fault-stray);
+  --color-fault-thermal-oil: var(--fault-thermal-oil);
+  --color-fault-thermal-cellulose: var(--fault-thermal-cellulose);
+  --color-fault-mild: var(--fault-mild);
+  --color-fault-attention: var(--fault-attention);
+  --color-fault-pd: var(--fault-pd);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -48,6 +55,7 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+/* Tema terang (default) -- bawaan shadcn. */
 :root {
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
@@ -81,8 +89,19 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* Palet warna per fault type -- ini pengkodean data (data encoding), sama di kedua tema,
+     supaya kategori gampang dibedakan di grafik & tabel baik di light maupun dark mode. */
+  --fault-normal: oklch(0.6 0.16 145);
+  --fault-stray: oklch(0.7 0.16 80);
+  --fault-thermal-oil: oklch(0.7 0.16 80);
+  --fault-thermal-cellulose: oklch(0.62 0.19 45);
+  --fault-mild: oklch(0.68 0.17 55);
+  --fault-attention: oklch(0.6 0.13 230);
+  --fault-pd: oklch(0.55 0.21 25);
 }
 
+/* Tema gelap -- diaktifkan lewat class "dark" di <html> (next-themes). */
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
@@ -115,6 +134,14 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+
+  --fault-normal: oklch(0.68 0.19 145);
+  --fault-stray: oklch(0.79 0.16 80);
+  --fault-thermal-oil: oklch(0.79 0.16 80);
+  --fault-thermal-cellulose: oklch(0.7 0.19 45);
+  --fault-mild: oklch(0.76 0.17 55);
+  --fault-attention: oklch(0.75 0.13 220);
+  --fault-pd: oklch(0.62 0.21 25);
 }
 
 @layer base {
@@ -126,5 +153,14 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-data {
+    font-family: var(--font-data);
   }
 }

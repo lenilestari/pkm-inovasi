@@ -1,22 +1,32 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, IBM_Plex_Sans, IBM_Plex_Mono } from "next/font/google";
 import Link from "next/link";
+import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeToggle } from "@/components/theme-toggle";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const display = Space_Grotesk({
+  variable: "--font-display",
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const body = IBM_Plex_Sans({
+  variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
+});
+
+const data = IBM_Plex_Mono({
+  variable: "--font-data",
+  subsets: ["latin"],
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
-  title: "DGA + Partial Discharge Risk Score - Prototype PKM",
+  title: "DGA Risk Monitor -- Prototype PKM",
   description:
-    "Prototype deteksi dini degradasi trafo: DGA Rule Engine (IEEE C57.104-2019) + Composite Risk Score (Isolation Forest).",
+    "Panel monitoring degradasi trafo: DGA Rule Engine (IEEE C57.104-2019) + Composite Risk Score (Isolation Forest).",
 };
 
 export default function RootLayout({
@@ -27,29 +37,53 @@ export default function RootLayout({
   return (
     <html
       lang="id"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${display.variable} ${body.variable} ${data.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
-        <header className="border-b">
-          <div className="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
-            <Link href="/" className="font-semibold">
-              DGA Risk Score <span className="text-muted-foreground font-normal">-- prototype PKM</span>
-            </Link>
-            <nav className="flex gap-4 text-sm">
-              <Link href="/" className="hover:underline">
-                Dashboard
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
+          <header className="border-b border-border/60 sticky top-0 z-10 bg-background/90 backdrop-blur">
+            <div className="mx-auto max-w-6xl px-4 py-3.5 flex items-center justify-between">
+              <Link href="/" className="flex items-center gap-2.5">
+                <span className="relative flex size-2.5">
+                  <span className="absolute inline-flex size-full animate-ping rounded-full bg-fault-normal/60" />
+                  <span className="relative inline-flex size-2.5 rounded-full bg-fault-normal" />
+                </span>
+                <span className="font-display font-semibold tracking-tight text-[15px]">
+                  DGA RISK MONITOR
+                </span>
+                <span className="hidden sm:inline text-muted-foreground text-xs font-data">
+                  / prototype-pkm
+                </span>
               </Link>
-              <Link href="/coba" className="hover:underline">
-                Coba Sendiri
-              </Link>
-            </nav>
-          </div>
-        </header>
-        <main className="flex-1 mx-auto max-w-6xl w-full px-4 py-8">{children}</main>
-        <footer className="border-t py-6 text-center text-xs text-muted-foreground">
-          Data DGA riil dari 3 laporan lab PT Petrolab Services -- data Partial Discharge masih
-          simulasi (lihat catatan di Dashboard).
-        </footer>
+              <nav className="flex items-center gap-1 text-sm font-medium">
+                <Link
+                  href="/"
+                  className="px-3 py-1.5 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  Dashboard
+                </Link>
+                <Link
+                  href="/coba"
+                  className="px-3 py-1.5 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  Coba Sendiri
+                </Link>
+                <Link
+                  href="/metodologi"
+                  className="px-3 py-1.5 rounded-md hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  Metodologi
+                </Link>
+                <ThemeToggle />
+              </nav>
+            </div>
+          </header>
+          <main className="flex-1 mx-auto max-w-6xl w-full px-4 py-8">{children}</main>
+          <footer className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground font-data">
+            DATA DGA: PT PETROLAB SERVICES (RIIL) &middot; DATA PD: SIMULASI -- lihat catatan transparansi di Dashboard
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

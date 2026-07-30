@@ -221,7 +221,7 @@ export function TryItForm() {
     <div className="grid gap-6 lg:grid-cols-2">
       <Card>
         <CardHeader>
-          <CardTitle>Input Pembacaan DGA</CardTitle>
+          <CardTitle className="font-display">Input Pembacaan DGA</CardTitle>
           <CardDescription>
             Isi nilai gas terlarut (ppm) hasil uji lab. Pembacaan sebelumnya opsional -- kalau
             diisi, Delta Value / Gas Rate ikut dihitung (dipakai Rule Engine &amp; Risk Score).
@@ -280,7 +280,7 @@ export function TryItForm() {
 
       <Card>
         <CardHeader>
-          <CardTitle>Hasil</CardTitle>
+          <CardTitle className="font-display">Hasil</CardTitle>
           <CardDescription>
             Rule Engine (IEEE C57.104-2019) dijalankan langsung di browser. Composite Risk Score
             dihitung oleh model IsolationForest yang sama persis dengan notebook (diekspor ke
@@ -318,7 +318,7 @@ export function TryItForm() {
                 </div>
                 <div>
                   <p className="text-xs text-muted-foreground mb-1">anomaly_score_raw</p>
-                  <code className="text-sm">{result.anomalyScoreRaw.toFixed(4)}</code>
+                  <code className="text-sm font-data">{result.anomalyScoreRaw.toFixed(4)}</code>
                 </div>
               </div>
 

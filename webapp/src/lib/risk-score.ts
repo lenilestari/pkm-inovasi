@@ -3,17 +3,32 @@
 // terpisah, jadi hasilnya identik dengan skor di notebook untuk fitur yang sama.
 "use client";
 
-import * as ort from "onnxruntime-web";
+import type * as OrtWasm from "onnxruntime-web/wasm";
 
-ort.env.wasm.wasmPaths = "/ort/";
-// Single-threaded: menghindari kebutuhan header COOP/COEP (SharedArrayBuffer) yang
-// tidak diset default oleh Vercel static hosting. Model ini kecil, cukup cepat 1 thread.
-ort.env.wasm.numThreads = 1;
+// Import DINAMIS (bukan top-level) -- onnxruntime-web punya efek samping di level modul
+// (resolve import.meta.url ke path .wasm) yang bikin Next.js gagal saat prerender halaman
+// ini di server (Node, bukan browser). Dengan dynamic import(), kode itu cuma jalan saat
+// benar-benar dipanggil di browser (lihat computeRiskScore).
+let ortPromise: Promise<typeof OrtWasm> | null = null;
 
-let sessionPromise: Promise<ort.InferenceSession> | null = null;
+function loadOrt() {
+  if (!ortPromise) {
+    ortPromise = import("onnxruntime-web/wasm").then((ort) => {
+      ort.env.wasm.wasmPaths = "/ort/";
+      // Single-threaded: menghindari kebutuhan header COOP/COEP (SharedArrayBuffer) yang
+      // tidak diset default oleh Vercel static hosting. Model kecil, cukup cepat 1 thread.
+      ort.env.wasm.numThreads = 1;
+      return ort;
+    });
+  }
+  return ortPromise;
+}
 
-function getSession() {
+let sessionPromise: Promise<OrtWasm.InferenceSession> | null = null;
+
+async function getSession() {
   if (!sessionPromise) {
+    const ort = await loadOrt();
     sessionPromise = ort.InferenceSession.create("/model/isolation_forest.onnx", {
       executionProviders: ["wasm"],
     });
@@ -43,6 +58,7 @@ export interface RiskScoreResult {
 }
 
 export async function computeRiskScore(features: RiskScoreFeatures): Promise<RiskScoreResult> {
+  const ort = await loadOrt();
   const session = await getSession();
   const values = new Float32Array([
     features.deltaH2,
