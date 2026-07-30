@@ -38,24 +38,79 @@ const EMPTY_GAS: Record<GasKey, string> = {
   co2: "",
 };
 
-const EXAMPLE_PRESETS: { label: string; curr: Record<GasKey, string>; o2: string; n2: string }[] = [
+interface ExamplePreset {
+  label: string;
+  faultType: string;
+  assetId: string;
+  manufactureYear: string;
+  sampleDate: string;
+  curr: Record<GasKey, string>;
+  o2: string;
+  n2: string;
+}
+
+// Semua patokan di bawah ini nilai RIIL langsung dari dataset 69 aset (bukan dikarang) --
+// satu contoh representatif per kategori fault_type yang benar-benar ada di data lab Petrolab.
+const EXAMPLE_PRESETS: ExamplePreset[] = [
   {
-    label: "Contoh: Normal (TR-26)",
+    label: "Normal",
+    faultType: "Normal",
+    assetId: "TR-26",
+    manufactureYear: "1974",
+    sampleDate: "2023-11-23",
     curr: { h2: "2", ch4: "189", c2h6: "391", c2h4: "14", c2h2: "0", co: "297", co2: "2016" },
     o2: "117",
     n2: "83716",
   },
   {
-    label: "Contoh: Partial Discharge (TR-44)",
-    curr: { h2: "8385", ch4: "1428", c2h6: "543", c2h4: "8", c2h2: "2.93", co: "488", co2: "11733" },
-    o2: "117",
-    n2: "45701",
+    label: "Stray Gassing",
+    faultType: "Stray Gassing",
+    assetId: "TR-Kolam-Renang",
+    manufactureYear: "2010",
+    sampleDate: "2024-03-05",
+    curr: { h2: "5", ch4: "25", c2h6: "26", c2h4: "28", c2h2: "0", co: "345", co2: "2415" },
+    o2: "363",
+    n2: "63626",
   },
   {
-    label: "Contoh: Thermal Cellulose (TR-1-HV-4)",
+    label: "Mild Overheating Paper",
+    faultType: "Mild Overheating Paper",
+    assetId: "TR-311B",
+    manufactureYear: "1993",
+    sampleDate: "2023-03-29",
+    curr: { h2: "85", ch4: "14", c2h6: "3", c2h4: "8", c2h2: "0", co: "480", co2: "18735" },
+    o2: "1367",
+    n2: "70057",
+  },
+  {
+    label: "Attention",
+    faultType: "Attention",
+    assetId: "TR-312A",
+    manufactureYear: "1985",
+    sampleDate: "2023-03-29",
+    curr: { h2: "2", ch4: "3", c2h6: "4", c2h4: "16", c2h2: "0", co: "271", co2: "5545" },
+    o2: "25555",
+    n2: "60244",
+  },
+  {
+    label: "Thermal Cellulose",
+    faultType: "Thermal Cellulose",
+    assetId: "TR-1-HV-4",
+    manufactureYear: "2021",
+    sampleDate: "2024-06-05",
     curr: { h2: "2", ch4: "29", c2h6: "3", c2h4: "8", c2h2: "0", co: "1325", co2: "7152" },
     o2: "1125",
     n2: "81304",
+  },
+  {
+    label: "Partial Discharge",
+    faultType: "Partial Discharge",
+    assetId: "TR-44",
+    manufactureYear: "1976",
+    sampleDate: "2023-11-23",
+    curr: { h2: "8385", ch4: "1428", c2h6: "543", c2h4: "8", c2h2: "2.93", co: "488", co2: "11733" },
+    o2: "117",
+    n2: "45701",
   },
 ];
 
@@ -125,10 +180,12 @@ export function TryItForm() {
     riskVariant: "default" | "secondary" | "destructive";
   }>(null);
 
-  function loadPreset(preset: (typeof EXAMPLE_PRESETS)[number]) {
+  function loadPreset(preset: ExamplePreset) {
     setCurrGas(preset.curr);
     setO2(preset.o2);
     setN2(preset.n2);
+    setManufactureYear(preset.manufactureYear);
+    setCurrDate(preset.sampleDate);
     setPrevDate("");
     setPrevGas({ ...EMPTY_GAS });
     setResult(null);
@@ -228,12 +285,25 @@ export function TryItForm() {
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
-          <div className="flex flex-wrap gap-2">
-            {EXAMPLE_PRESETS.map((p) => (
-              <Button key={p.label} type="button" variant="outline" size="sm" onClick={() => loadPreset(p)}>
-                {p.label}
-              </Button>
-            ))}
+          <div>
+            <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
+              Patokan -- nilai riil per kategori (klik buat isi form otomatis)
+            </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+              {EXAMPLE_PRESETS.map((p) => (
+                <button
+                  key={p.label}
+                  type="button"
+                  onClick={() => loadPreset(p)}
+                  className="rounded-md border border-border/70 bg-card px-3 py-2 text-left hover:bg-accent hover:text-accent-foreground transition-colors"
+                >
+                  <span className="block text-sm font-medium">{p.faultType}</span>
+                  <span className="block text-xs text-muted-foreground font-data">
+                    {p.assetId} &middot; {p.sampleDate}
+                  </span>
+                </button>
+              ))}
+            </div>
           </div>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-2 gap-3">
