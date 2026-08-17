@@ -261,7 +261,7 @@ Tabel ambang, fitur model, hasil validasi, dan batasan yang diakui terbuka.
 Pakai stack backend existing (Go / Fiber / GORM). Tanpa lisensi, tanpa komputasi tambahan.
 
 **Model sangat ringan**
-Isolation Forest via ONNX — terbukti jalan **client-side di browser**.
+Isolation Forest (ONNX) — ukurannya kecil & inferensinya cepat, bahkan terbukti jalan di browser untuk keperluan demo prototype. Untuk produksi, inferensi akan berjalan **di sisi server** sebagai bagian dari backend existing — bukan di browser tiap user.
 
 **Lapisan tambahan**
 Tampil sebagai layer baru di dashboard. **Tidak mengganti** sistem PD/DGA yang sudah berjalan.
@@ -357,7 +357,7 @@ Attention adalah flag ketidakpastian dari lab, bukan jenis kerusakan. Kami senga
 Untuk *time-series forecasting*, tidak cukup — dan kami tidak mengklaimnya. Pendekatan kami **cross-sectional**: satu baris = satu (aset, periode), 161 baris dengan 11 fitur. Ini rasio yang wajar untuk *unsupervised anomaly detection*. Nilai tren dipakai sebagai **fitur** (delta, jumlah parameter memburuk), bukan sebagai basis peramalan. Beberapa aset (mis. F5O-TR55) malah punya histori sampai 4 titik membentang 8 tahun.
 
 **Q: Kenapa Isolation Forest, bukan model yang lebih canggih?**
-Karena kami tidak punya label kegagalan historis — jadi supervised learning tidak mungkin. Isolation Forest ringan, dapat dijelaskan, tidak butuh label, dan cukup kecil untuk jalan di browser. Kesederhanaan itu fitur, bukan keterbatasan.
+Karena kami tidak punya label kegagalan historis — jadi supervised learning tidak mungkin. Isolation Forest ringan, dapat dijelaskan, tidak butuh label, dan cukup ringan sampai bisa dites jalan di browser untuk keperluan demo (bukan rencana arsitektur produksi — di produksi tetap berjalan di server seperti komponen backend lain). Kesederhanaan itu fitur, bukan keterbatasan.
 
 **Q: Kenapa PD masih simulasi?**
 Sudah kami telusuri langsung ke tim listrik — akar masalahnya bukan cuma beda format `asset_id`, tapi **gap instrumentasi**: DGA menguji minyak trafo langsung, sementara sensor PD saat ini terpasang di panel/switchgear, bukan di titik yang sama dengan trafo yang rutin diuji DGA. Pengukuran keduanya juga masih reaktif (baru dilakukan kalau ada tanda-tanda masalah), bukan menyeluruh ke semua aset — meski ada rencana diperluas. Kami memilih menampilkan hasil dengan PD simulasi **sambil menyatakannya terbuka**, daripada menunda seluruh prototype. Begitu cakupan pengukuran meluas dan ada aset yang "berpotongan" (diukur PD dan DGA sekaligus), itu langsung jadi titik awal validasi PD riil — bukan cuma menunggu tanpa arah.

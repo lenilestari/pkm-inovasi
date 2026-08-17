@@ -65,7 +65,12 @@ function useSummary() {
       .map(([fault, { sum, count }]) => ({ fault, mean: sum / count, count }))
       .sort((a, b) => a.mean - b.mean);
 
-    return { nAssets, nSamples, matchRate, chartData, nCritical };
+    const distribution = Array.from(byFault.entries())
+      .map(([fault, { count }]) => ({ fault, count, pct: (count / nSamples) * 100 }))
+      .sort((a, b) => b.count - a.count);
+    const maxCount = Math.max(...distribution.map((d) => d.count));
+
+    return { nAssets, nSamples, matchRate, chartData, nCritical, distribution, maxCount };
   }, []);
 }
 
@@ -87,7 +92,7 @@ function StatChip({ label, value, colorVar }: { label: string; value: string; co
 }
 
 export function Dashboard() {
-  const { nAssets, nSamples, matchRate, chartData, nCritical } = useSummary();
+  const { nAssets, nSamples, matchRate, chartData, nCritical, distribution, maxCount } = useSummary();
   const [filter, setFilter] = useState("");
 
   const filteredRows = useMemo(() => {
@@ -115,6 +120,37 @@ export function Dashboard() {
           colorVar="var(--fault-pd)"
         />
       </div>
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="font-display">Distribusi Kesimpulan Lab</CardTitle>
+          <CardDescription>
+            161 sampel, dikelompokkan per kesimpulan resmi lab Petrolab (<code className="font-data">lab_fault_type</code>).
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="space-y-2.5">
+          {distribution.map((d) => (
+            <div key={d.fault} className="flex items-center gap-3">
+              <span className="w-44 shrink-0 text-sm truncate">{d.fault}</span>
+              <div className="flex-1 h-4 rounded-sm bg-muted overflow-hidden">
+                <div
+                  className="h-full rounded-sm"
+                  style={{
+                    width: `${(d.count / maxCount) * 100}%`,
+                    backgroundColor: faultColor(d.fault),
+                  }}
+                />
+              </div>
+              <span className="w-24 shrink-0 text-right text-sm font-data tabular-nums">
+                {d.count} &middot; {d.pct.toFixed(1)}%
+              </span>
+            </div>
+          ))}
+          <p className="text-xs text-muted-foreground pt-1">
+            Attention = flag ketidakpastian lab, bukan jenis kerusakan.
+          </p>
+        </CardContent>
+      </Card>
 
       <Card>
         <CardHeader>
