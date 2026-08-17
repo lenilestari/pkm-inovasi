@@ -20,14 +20,14 @@ const FAULT_ENTRIES: FaultEntry[] = [
     colorVar: "var(--fault-stray)",
     severity: 1,
     description:
-      "Gas mulai terbentuk akibat panas ringan (di bawah 200°C) dari proses normal trafo -- bukan karena ada fault aktif. Risiko rendah, sering muncul di trafo yang sudah lama beroperasi.",
+      "Gas mulai terbentuk akibat panas ringan (di bawah 200°C) dari proses normal trafo, bukan karena ada fault aktif. Risiko rendah, sering muncul di trafo yang sudah lama beroperasi.",
   },
   {
     name: "Thermal Fault (Oil)",
     colorVar: "var(--fault-thermal-oil)",
     severity: 1,
     description:
-      "Panas berlebih di minyak, suhu sedang sampai tinggi -- biasanya karena sambungan longgar atau arus sirkulasi berlebih. Terdeteksi dari CH4, C2H6, C2H4 yang naik.",
+      "Panas berlebih di minyak, suhu sedang sampai tinggi, biasanya karena sambungan longgar atau arus sirkulasi berlebih. Terdeteksi dari CH4, C2H6, C2H4 yang naik.",
   },
   {
     name: "Thermal Cellulose",
@@ -41,21 +41,21 @@ const FAULT_ENTRIES: FaultEntry[] = [
     colorVar: "var(--fault-mild)",
     severity: 2,
     description:
-      "Mirip Thermal Cellulose tapi lebih ringan/awal -- kertas isolasi mulai terdegradasi, belum parah.",
+      "Mirip Thermal Cellulose tapi lebih ringan/awal, kertas isolasi mulai terdegradasi, belum parah.",
   },
   {
     name: "Attention",
     colorVar: "var(--fault-attention)",
     severity: -1,
     description:
-      "Flag peringatan dari lab untuk kasus borderline/ambigu (kadang dikombinasikan hasil uji Furan), belum jelas masuk kategori fault spesifik yang mana -- bukan bagian dari tangga keparahan di atas.",
+      "Flag peringatan dari lab untuk kasus borderline/ambigu (kadang dikombinasikan hasil uji Furan), belum jelas masuk kategori fault spesifik yang mana, bukan bagian dari tangga keparahan di atas.",
   },
   {
     name: "Partial Discharge",
     colorVar: "var(--fault-pd)",
     severity: 3,
     description:
-      "Paling berbahaya: ada percikan listrik kecil di isolasi (void, kontaminasi, cacat isolasi) yang bisa merambat jadi kegagalan total. Ditandai H2 sangat tinggi -- makanya paling anomali di Composite Risk Score.",
+      "Paling berbahaya: ada percikan listrik kecil di isolasi (void, kontaminasi, cacat isolasi) yang bisa merambat jadi kegagalan total. Ditandai H2 sangat tinggi, makanya paling anomali di Composite Risk Score.",
   },
 ];
 
@@ -66,7 +66,7 @@ export function FaultGlossary() {
         <CardTitle className="font-display">Kamus Fault Type</CardTitle>
         <CardDescription>
           Kesimpulan jenis gangguan dari kadar gas terlarut, diurutkan dari paling ringan ke
-          paling berbahaya. &quot;Attention&quot; di luar urutan -- itu flag ketidakpastian lab,
+          paling berbahaya. &quot;Attention&quot; di luar urutan, itu flag ketidakpastian lab,
           bukan level keparahan.
         </CardDescription>
       </CardHeader>

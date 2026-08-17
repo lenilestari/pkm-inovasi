@@ -203,7 +203,7 @@ export function Dashboard() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="font-display">Log Data -- 69 Aset (161 Sampel)</CardTitle>
+          <CardTitle className="font-display">Log Data, 69 Aset (161 Sampel)</CardTitle>
           <CardDescription>
             Ditranskrip verbatim dari 3 laporan lab PT Petrolab Services (Des 2023, Mar 2024, Jul
             2024).

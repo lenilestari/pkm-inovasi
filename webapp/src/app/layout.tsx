@@ -24,7 +24,7 @@ const data = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PD-DGA Risk Monitor -- Prototype PKM",
+  title: "PD-DGA Risk Monitor, Prototype PKM",
   description:
     "Unified Trend & Correlation Analytics untuk PD + DGA: DGA Rule Engine (IEEE C57.104-2019) + Composite Risk Score (Isolation Forest). Sisi DGA riil & tervalidasi, sisi PD masih simulasi menunggu mapping data.",
 };
@@ -81,7 +81,7 @@ export default function RootLayout({
           </header>
           <main className="flex-1 mx-auto max-w-6xl w-full px-4 py-8">{children}</main>
           <footer className="border-t border-border/60 py-6 text-center text-xs text-muted-foreground font-data">
-            DATA DGA: PT PETROLAB SERVICES (RIIL) &middot; DATA PD: SIMULASI -- lihat catatan transparansi di Dashboard
+            DATA DGA: PT PETROLAB SERVICES (RIIL) &middot; DATA PD: SIMULASI, lihat catatan transparansi di Dashboard
           </footer>
         </ThemeProvider>
       </body>

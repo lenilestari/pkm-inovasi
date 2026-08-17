@@ -281,14 +281,14 @@ export function TryItForm() {
         <CardHeader>
           <CardTitle className="font-display">Input Pembacaan DGA</CardTitle>
           <CardDescription>
-            Isi nilai gas terlarut (ppm) hasil uji lab. Pembacaan sebelumnya opsional -- kalau
+            Isi nilai gas terlarut (ppm) hasil uji lab. Pembacaan sebelumnya opsional, kalau
             diisi, Delta Value / Gas Rate ikut dihitung (dipakai Rule Engine &amp; Risk Score).
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
           <div>
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
-              Patokan -- nilai riil per kategori (klik buat isi form otomatis)
+              Patokan, nilai riil per kategori (klik buat isi form otomatis)
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {EXAMPLE_PRESETS.map((p) => (
@@ -339,7 +339,7 @@ export function TryItForm() {
             <label className="flex items-center gap-2 text-sm">
               <input type="checkbox" checked={pdWorsening} onChange={(e) => setPdWorsening(e.target.checked)} className="size-4" />
               Indikasi pembacaan Partial Discharge (sensor UHF/dsb.) memburuk sejak sampel sebelumnya
-              <span className="text-muted-foreground">(opsional, manual -- lihat catatan data PD di halaman utama)</span>
+              <span className="text-muted-foreground">(opsional, manual, lihat catatan data PD di halaman utama)</span>
             </label>
 
             <Button type="submit" disabled={loading}>
