@@ -218,6 +218,7 @@ Encoding ordinal dipilih karena one-hot menimbulkan *rareness bias* — fault ya
 > **RIIL** — seluruh nilai gas DGA berasal dari 3 laporan lab pihak ketiga. Tidak ada angka fabrikasi.
 > **BELUM RIIL** — nilai Partial Discharge masih **simulasi**; sensor PD produksi belum ter-mapping ke asset_id DGA.
 > **Konsekuensinya** — validasi 80% dan urutan skor **sepenuhnya berbasis data DGA riil**. Kontribusi PD ke skor gabungan baru bisa diklaim setelah mapping asset_id selesai — dan itulah **langkah Do #1** kami.
+> **Sudah dicek ke lapangan** — bukan cuma dugaan: dikonfirmasi tim listrik, akar masalahnya bukan sekadar beda format penamaan, tapi **gap instrumentasi** — DGA menguji minyak trafo langsung, sementara sensor PD saat ini terpasang di panel/switchgear, bukan di titik yang sama. Cakupan pengukuran keduanya juga masih reaktif (baru diukur kalau ada tanda-tanda masalah), belum menyeluruh ke semua aset — tapi ada rencana diperluas ke depan.
 
 > *Penyampaian: ini slide paling penting di deck. SEBUTKAN panel transparansi dengan suara jelas, jangan dilewat — website kami mengakuinya terbuka di halaman /metodologi, jadi juri bisa menemukannya sendiri. Mendahului = kredibilitas; didahului = kehilangan kepercayaan. Frasa yang dipakai: "Kami sengaja tidak mengklaim lebih dari yang bisa kami buktikan."*
 
@@ -359,7 +360,7 @@ Untuk *time-series forecasting*, tidak cukup — dan kami tidak mengklaimnya. Pe
 Karena kami tidak punya label kegagalan historis — jadi supervised learning tidak mungkin. Isolation Forest ringan, dapat dijelaskan, tidak butuh label, dan cukup kecil untuk jalan di browser. Kesederhanaan itu fitur, bukan keterbatasan.
 
 **Q: Kenapa PD masih simulasi?**
-Data PD produksi saat ini berisi asset_id yang belum ter-mapping ke aset DGA riil. Kami memilih menampilkan hasil dengan PD simulasi **sambil menyatakannya terbuka**, daripada menunda seluruh prototype. Mapping asset_id adalah item nomor satu di tahap Do.
+Sudah kami telusuri langsung ke tim listrik — akar masalahnya bukan cuma beda format `asset_id`, tapi **gap instrumentasi**: DGA menguji minyak trafo langsung, sementara sensor PD saat ini terpasang di panel/switchgear, bukan di titik yang sama dengan trafo yang rutin diuji DGA. Pengukuran keduanya juga masih reaktif (baru dilakukan kalau ada tanda-tanda masalah), bukan menyeluruh ke semua aset — meski ada rencana diperluas. Kami memilih menampilkan hasil dengan PD simulasi **sambil menyatakannya terbuka**, daripada menunda seluruh prototype. Begitu cakupan pengukuran meluas dan ada aset yang "berpotongan" (diukur PD dan DGA sekaligus), itu langsung jadi titik awal validasi PD riil — bukan cuma menunggu tanpa arah.
 
 **Q: Apakah rule engine kalian pakai Duval Triangle/Rogers Ratio?**
 Tidak — basis kami individual gas threshold + Delta Value + Gas Rate ala IEEE C57.104-2019, karena itu metode yang benar-benar dipakai laporan lab kami sendiri. Urutan keparahan fault type kami terinspirasi dari severity ordering Duval/IEEE, tapi kami tidak mengimplementasikan plot segitiga/pentagon Duval secara penuh.
