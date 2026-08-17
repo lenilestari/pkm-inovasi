@@ -181,7 +181,7 @@ Bukan nilai gas mentah, melainkan **sinyal yang sudah diolah** (11 fitur total):
 - Pendekatan *cross-sectional*: satu baris = satu (aset, periode sampling), 161 baris
 
 **Catatan teknis kecil (kredibilitas):**
-Encoding ordinal dipilih karena one-hot menimbulkan *rareness bias* — fault yang jarang muncul otomatis dianggap anomali hanya karena jarang.
+Kami urutkan fault dari ringan ke parah, bukan disamaratakan — supaya yang jarang muncul di data tidak salah dikira paling berbahaya.
 
 > *Penyampaian: tekankan kata "reuse" pada Trend Engine — ini bukan bikin dari nol, tapi adaptasi modul yang SUDAH terbukti jalan di produksi. Ini sekaligus bukti awal untuk argumen Replikasi di Slide 10.*
 

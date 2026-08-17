@@ -5,10 +5,14 @@ export default function Home() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Deteksi Dini Degradasi Trafo -- Prototype PKM</h1>
+        <h1 className="text-2xl font-semibold">Unified Trend &amp; Correlation Analytics -- PD + DGA</h1>
         <p className="text-muted-foreground mt-1">
-          DGA Rule Engine (IEEE C57.104-2019) + Trend Engine + Composite Risk Score (Isolation
-          Forest, unsupervised), dijalankan di atas data DGA riil 69 aset trafo.
+          Dashboard <strong className="text-foreground">early warning</strong>: DGA Rule Engine
+          (IEEE C57.104-2019) + Trend Engine + Composite Risk Score (Isolation Forest,
+          unsupervised) yang menggabungkan sinyal PD dan DGA jadi satu skor risiko per aset --
+          menandai dini saat &ge;2 parameter memburuk bersamaan, sebelum jadi kegagalan. Dijalankan
+          di atas data DGA riil 69 aset trafo -- lihat catatan transparansi soal status data PD di
+          bawah.
         </p>
       </div>
       <Alert>

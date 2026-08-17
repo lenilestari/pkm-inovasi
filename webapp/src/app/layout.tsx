@@ -24,9 +24,9 @@ const data = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DGA Risk Monitor -- Prototype PKM",
+  title: "PD-DGA Risk Monitor -- Prototype PKM",
   description:
-    "Panel monitoring degradasi trafo: DGA Rule Engine (IEEE C57.104-2019) + Composite Risk Score (Isolation Forest).",
+    "Unified Trend & Correlation Analytics untuk PD + DGA: DGA Rule Engine (IEEE C57.104-2019) + Composite Risk Score (Isolation Forest). Sisi DGA riil & tervalidasi, sisi PD masih simulasi menunggu mapping data.",
 };
 
 export default function RootLayout({
@@ -50,10 +50,10 @@ export default function RootLayout({
                   <span className="relative inline-flex size-2.5 rounded-full bg-fault-normal" />
                 </span>
                 <span className="font-display font-semibold tracking-tight text-[15px]">
-                  DGA RISK MONITOR
+                  PD-DGA RISK MONITOR
                 </span>
                 <span className="hidden sm:inline text-muted-foreground text-xs font-data">
-                  / prototype-pkm
+                  / unified trend &amp; correlation analytics
                 </span>
               </Link>
               <nav className="flex items-center gap-1 text-sm font-medium">
