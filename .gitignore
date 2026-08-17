@@ -9,5 +9,10 @@ webapp_artifacts/
 # Query dump scratch files
 _SELECT_*.csv
 
+# Data PD riil -- data operasional internal, sengaja BELUM di-push (lihat data_pd_riil/README.md)
+# Hapus baris ini setelah siap dibuka/di-push.
+data_pd_riil/
+Data Pengukuran Partial Discharge*.xlsx
+
 # OS/editor
 .DS_Store
