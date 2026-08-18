@@ -33,18 +33,41 @@ interface Row {
   c2h2: number;
   co: number;
   co2: number;
+  o2: number;
+  n2: number;
+  o2n2_class: string;
+  age_bucket: string;
+  delta_h2: number | null;
+  delta_ch4: number | null;
+  delta_c2h6: number | null;
+  delta_c2h4: number | null;
+  delta_c2h2: number | null;
+  delta_co: number | null;
+  delta_co2: number | null;
   lab_status: number;
   lab_fault_type: string;
   rule_status: number;
   rule_fault_type: string;
+  rule_fault_severity: number;
   status_match: boolean;
   n_gas_worsening: number;
   pd_value_max: number | null;
   pd_overall_severity: string | null;
   pd_worsening: number;
   n_parameters_worsening: number;
+  anomaly_score: number;
   anomaly_score_raw: number;
 }
+
+const DELTA_FIELDS: { key: keyof Row; label: string }[] = [
+  { key: "delta_h2", label: "H2" },
+  { key: "delta_ch4", label: "CH4" },
+  { key: "delta_c2h6", label: "C2H6" },
+  { key: "delta_c2h4", label: "C2H4" },
+  { key: "delta_c2h2", label: "C2H2" },
+  { key: "delta_co", label: "CO" },
+  { key: "delta_co2", label: "CO2" },
+];
 
 const rows = dataset.rows as unknown as Row[];
 
@@ -130,6 +153,7 @@ function StatChip({ label, value, colorVar }: { label: string; value: string; co
 export function Dashboard() {
   const { nAssets, nSamples, matchRate, chartData, nCritical, distribution, maxCount } = useSummary();
   const [filter, setFilter] = useState("");
+  const [expandedRow, setExpandedRow] = useState<string | null>(null);
   const assetOptions = useAssetOptions();
   const [trendAsset, setTrendAsset] = useState(assetOptions[0]?.asset_id ?? "");
 
@@ -425,7 +449,9 @@ export function Dashboard() {
             Ditranskrip verbatim dari 3 laporan lab PT Petrolab Services (Des 2023, Mar 2024, Jul
             2024). Kolom &quot;Gas Memburuk&quot; dan &quot;Match&quot;-&quot;Score&quot; murni
             dari data DGA riil; kolom &quot;PD&quot; ditandai terpisah karena masih data simulasi
-            (lihat Alert transparansi di atas).
+            (lihat Alert transparansi di atas). <strong className="text-foreground">Klik baris</strong>{" "}
+            untuk lihat rincian penuh (age, delta per gas, rule_status, dst -- sesuai definisi di
+            halaman Metodologi).
           </CardDescription>
           <Input
             placeholder="Cari asset_id atau fault type..."
@@ -457,53 +483,126 @@ export function Dashboard() {
                 </tr>
               </thead>
               <tbody>
-                {filteredRows.map((r, i) => (
-                  <tr
-                    key={`${r.asset_id}-${r.sample_date}-${i}`}
-                    className="border-b border-border/40 last:border-0"
-                    style={{ borderLeft: `3px solid ${faultColor(r.lab_fault_type)}` }}
-                  >
-                    <td className="px-3 py-2 font-medium whitespace-nowrap">{r.asset_id}</td>
-                    <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
-                      {r.sample_date}
-                    </td>
-                    <td className="px-3 py-2 whitespace-nowrap">
-                      <span
-                        className="inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-xs font-sans"
-                        style={{
-                          color: faultColor(r.lab_fault_type),
-                          backgroundColor: "color-mix(in oklch, currentColor 14%, transparent)",
-                        }}
+                {filteredRows.map((r, i) => {
+                  const rowKey = `${r.asset_id}-${r.sample_date}-${i}`;
+                  const isOpen = expandedRow === rowKey;
+                  return (
+                    <>
+                      <tr
+                        key={rowKey}
+                        onClick={() => setExpandedRow(isOpen ? null : rowKey)}
+                        className="border-b border-border/40 last:border-0 cursor-pointer hover:bg-accent/40"
+                        style={{ borderLeft: `3px solid ${faultColor(r.lab_fault_type)}` }}
                       >
-                        <span
-                          className="size-1.5 rounded-full"
-                          style={{ backgroundColor: faultColor(r.lab_fault_type) }}
-                        />
-                        {r.lab_fault_type}
-                      </span>
-                    </td>
-                    <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
-                      {r.rule_fault_type}
-                    </td>
-                    <td className="px-3 py-2 whitespace-nowrap">
-                      {r.status_match ? (
-                        <span style={{ color: "var(--fault-normal)" }}>cocok</span>
-                      ) : (
-                        <span style={{ color: "var(--fault-pd)" }}>beda</span>
+                        <td className="px-3 py-2 font-medium whitespace-nowrap">
+                          <span className="inline-block w-3 text-muted-foreground">{isOpen ? "▾" : "▸"}</span>
+                          {r.asset_id}
+                        </td>
+                        <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
+                          {r.sample_date}
+                        </td>
+                        <td className="px-3 py-2 whitespace-nowrap">
+                          <span
+                            className="inline-flex items-center gap-1.5 rounded px-1.5 py-0.5 text-xs font-sans"
+                            style={{
+                              color: faultColor(r.lab_fault_type),
+                              backgroundColor: "color-mix(in oklch, currentColor 14%, transparent)",
+                            }}
+                          >
+                            <span
+                              className="size-1.5 rounded-full"
+                              style={{ backgroundColor: faultColor(r.lab_fault_type) }}
+                            />
+                            {r.lab_fault_type}
+                          </span>
+                        </td>
+                        <td className="px-3 py-2 text-muted-foreground whitespace-nowrap">
+                          {r.rule_fault_type}
+                        </td>
+                        <td className="px-3 py-2 whitespace-nowrap">
+                          {r.status_match ? (
+                            <span style={{ color: "var(--fault-normal)" }}>cocok</span>
+                          ) : (
+                            <span style={{ color: "var(--fault-pd)" }}>beda</span>
+                          )}
+                        </td>
+                        <td className="px-3 py-2 text-center tabular-nums">{r.n_gas_worsening}</td>
+                        <td className="px-3 py-2 text-center tabular-nums text-fault-attention">
+                          {r.pd_worsening}
+                        </td>
+                        <td className="px-3 py-2 text-center tabular-nums font-semibold">
+                          {r.n_parameters_worsening}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {r.anomaly_score_raw.toFixed(4)}
+                        </td>
+                      </tr>
+                      {isOpen && (
+                        <tr className="border-b border-border/40 bg-accent/20">
+                          <td colSpan={9} className="px-4 py-3">
+                            <div className="grid gap-4 sm:grid-cols-3 text-xs font-sans">
+                              <div>
+                                <p className="uppercase tracking-wider text-muted-foreground mb-1.5">Konteks Aset</p>
+                                <dl className="space-y-1 font-data">
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">age</dt>
+                                    <dd>{r.age} th</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">age_bucket</dt>
+                                    <dd>{r.age_bucket}</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">o2n2_class</dt>
+                                    <dd>{r.o2n2_class}</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">o2 / n2</dt>
+                                    <dd>{r.o2} / {r.n2}</dd>
+                                  </div>
+                                </dl>
+                              </div>
+                              <div>
+                                <p className="uppercase tracking-wider text-muted-foreground mb-1.5">Delta per Gas (ppm)</p>
+                                <dl className="space-y-1 font-data">
+                                  {DELTA_FIELDS.map((f) => (
+                                    <div key={f.key} className="flex justify-between gap-2">
+                                      <dt className="text-muted-foreground">{f.label}</dt>
+                                      <dd>{r[f.key] === null ? "-" : String(r[f.key])}</dd>
+                                    </div>
+                                  ))}
+                                </dl>
+                              </div>
+                              <div>
+                                <p className="uppercase tracking-wider text-muted-foreground mb-1.5">Rule Engine &amp; Model</p>
+                                <dl className="space-y-1 font-data">
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">rule_status</dt>
+                                    <dd>{r.rule_status}</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">rule_fault_severity</dt>
+                                    <dd>{r.rule_fault_severity}</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">anomaly_score</dt>
+                                    <dd>{r.anomaly_score}</dd>
+                                  </div>
+                                  <div className="flex justify-between gap-2">
+                                    <dt className="text-muted-foreground">pd_value_max (simulasi)</dt>
+                                    <dd className="text-fault-attention">
+                                      {r.pd_value_max === null ? "-" : `${r.pd_value_max} mV (${r.pd_overall_severity})`}
+                                    </dd>
+                                  </div>
+                                </dl>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
                       )}
-                    </td>
-                    <td className="px-3 py-2 text-center tabular-nums">{r.n_gas_worsening}</td>
-                    <td className="px-3 py-2 text-center tabular-nums text-fault-attention">
-                      {r.pd_worsening}
-                    </td>
-                    <td className="px-3 py-2 text-center tabular-nums font-semibold">
-                      {r.n_parameters_worsening}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {r.anomaly_score_raw.toFixed(4)}
-                    </td>
-                  </tr>
-                ))}
+                    </>
+                  );
+                })}
               </tbody>
             </table>
           </div>
