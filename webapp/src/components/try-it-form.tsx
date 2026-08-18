@@ -48,30 +48,37 @@ interface ExamplePreset {
   curr: Record<GasKey, string>;
   o2: string;
   n2: string;
+  /** Kalau ada: rule engine kita TIDAK BISA menghasilkan label ini (arsitekturnya cuma
+   *  5 kategori), jadi hasil Fault Type yang muncul memang akan beda dari label preset --
+   *  ini bukan bug, tapi keterbatasan yang kita disclose. */
+  ruleEngineCaveat?: string;
 }
 
 // Semua patokan di bawah ini nilai RIIL langsung dari dataset 69 aset (bukan dikarang) --
 // satu contoh representatif per kategori fault_type yang benar-benar ada di data lab Petrolab.
+// Untuk Normal/Stray Gassing/Thermal Cellulose/Partial Discharge, baris dipilih yang rule_fault_type
+// hasil rule engine kita SAMA dengan lab_fault_type (status_match), supaya demo konsisten dengan
+// label tombolnya -- lihat dataset.json kolom status_match sebelum ganti baris presetnya.
 const EXAMPLE_PRESETS: ExamplePreset[] = [
   {
     label: "Normal",
     faultType: "Normal",
-    assetId: "TR-26",
-    manufactureYear: "1974",
-    sampleDate: "2023-11-23",
-    curr: { h2: "2", ch4: "189", c2h6: "391", c2h4: "14", c2h2: "0", co: "297", co2: "2016" },
-    o2: "117",
-    n2: "83716",
+    assetId: "1N-TR-001",
+    manufactureYear: "2014",
+    sampleDate: "2024-02-06",
+    curr: { h2: "3", ch4: "10", c2h6: "3", c2h4: "8", c2h2: "0", co: "702", co2: "6854" },
+    o2: "1694",
+    n2: "71536",
   },
   {
     label: "Stray Gassing",
     faultType: "Stray Gassing",
-    assetId: "TR-Kolam-Renang",
-    manufactureYear: "2010",
-    sampleDate: "2024-03-05",
-    curr: { h2: "5", ch4: "25", c2h6: "26", c2h4: "28", c2h2: "0", co: "345", co2: "2415" },
-    o2: "363",
-    n2: "63626",
+    assetId: "TR-45B",
+    manufactureYear: "1976",
+    sampleDate: "2024-02-06",
+    curr: { h2: "2", ch4: "9", c2h6: "3", c2h4: "100", c2h2: "0", co: "16", co2: "10215" },
+    o2: "117",
+    n2: "64349",
   },
   {
     label: "Mild Overheating Paper",
@@ -82,6 +89,8 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "85", ch4: "14", c2h6: "3", c2h4: "8", c2h2: "0", co: "480", co2: "18735" },
     o2: "1367",
     n2: "70057",
+    ruleEngineCaveat:
+      "Rule engine kami cuma bisa hasilkan 5 kategori (Normal, Stray Gassing, Thermal Fault (Oil), Thermal Cellulose, Partial Discharge) -- \"Mild Overheating Paper\" cuma ada sebagai kesimpulan lab, bukan output rule engine kami. Contoh ini sengaja dipasang untuk menunjukkan keterbatasan itu secara jujur, bukan disembunyikan.",
   },
   {
     label: "Attention",
@@ -92,6 +101,8 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "2", ch4: "3", c2h6: "4", c2h4: "16", c2h2: "0", co: "271", co2: "5545" },
     o2: "25555",
     n2: "60244",
+    ruleEngineCaveat:
+      "Rule engine kami cuma bisa hasilkan 5 kategori (Normal, Stray Gassing, Thermal Fault (Oil), Thermal Cellulose, Partial Discharge) -- \"Attention\" cuma ada sebagai flag ketidakpastian dari lab, bukan output rule engine kami. Contoh ini sengaja dipasang untuk menunjukkan keterbatasan itu secara jujur, bukan disembunyikan.",
   },
   {
     label: "Thermal Cellulose",
@@ -163,6 +174,7 @@ export function TryItForm() {
   const [o2, setO2] = useState("");
   const [n2, setN2] = useState("");
   const [pdWorsening, setPdWorsening] = useState(false);
+  const [presetCaveat, setPresetCaveat] = useState<string | null>(null);
 
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -191,6 +203,7 @@ export function TryItForm() {
     setCurrDate(preset.sampleDate);
     setPrevDate("");
     setPrevGas({ ...EMPTY_GAS });
+    setPresetCaveat(preset.ruleEngineCaveat ?? null);
     setResult(null);
     setError(null);
   }
@@ -309,6 +322,12 @@ export function TryItForm() {
                 </button>
               ))}
             </div>
+            {presetCaveat && (
+              <Alert className="mt-3">
+                <AlertTitle>Catatan keterbatasan rule engine</AlertTitle>
+                <AlertDescription>{presetCaveat}</AlertDescription>
+              </Alert>
+            )}
           </div>
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-2 gap-3">
