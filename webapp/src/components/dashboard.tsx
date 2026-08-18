@@ -6,6 +6,9 @@ import {
   BarChart,
   CartesianGrid,
   Cell,
+  Legend,
+  Line,
+  LineChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -21,6 +24,13 @@ interface Row {
   sample_date: string;
   manufacture_year: number;
   age: number;
+  h2: number;
+  ch4: number;
+  c2h6: number;
+  c2h4: number;
+  c2h2: number;
+  co: number;
+  co2: number;
   lab_status: number;
   lab_fault_type: string;
   rule_status: number;
@@ -33,6 +43,27 @@ interface Row {
 }
 
 const rows = dataset.rows as unknown as Row[];
+
+const GAS_TREND_LINES: { key: keyof Row; name: string; color: string }[] = [
+  { key: "h2", name: "H2", color: "#dc2626" },
+  { key: "ch4", name: "CH4", color: "#f59e0b" },
+  { key: "c2h6", name: "C2H6", color: "#16a34a" },
+  { key: "c2h4", name: "C2H4", color: "#0ea5e9" },
+  { key: "c2h2", name: "C2H2", color: "#a855f7" },
+  { key: "co", name: "CO", color: "#78716c" },
+  { key: "co2", name: "CO2", color: "#1f2937" },
+];
+
+function useAssetOptions() {
+  return useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const r of rows) counts.set(r.asset_id, (counts.get(r.asset_id) ?? 0) + 1);
+    return Array.from(counts.entries())
+      .filter(([, count]) => count >= 2)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+      .map(([asset_id, count]) => ({ asset_id, count }));
+  }, []);
+}
 
 const FAULT_COLOR_VAR: Record<string, string> = {
   "Partial Discharge": "var(--fault-pd)",
@@ -95,6 +126,14 @@ function StatChip({ label, value, colorVar }: { label: string; value: string; co
 export function Dashboard() {
   const { nAssets, nSamples, matchRate, chartData, nCritical, distribution, maxCount } = useSummary();
   const [filter, setFilter] = useState("");
+  const assetOptions = useAssetOptions();
+  const [trendAsset, setTrendAsset] = useState(assetOptions[0]?.asset_id ?? "");
+
+  const trendData = useMemo(() => {
+    return rows
+      .filter((r) => r.asset_id === trendAsset)
+      .sort((a, b) => a.sample_date.localeCompare(b.sample_date));
+  }, [trendAsset]);
 
   const filteredRows = useMemo(() => {
     const q = filter.trim().toLowerCase();
@@ -201,6 +240,73 @@ export function Dashboard() {
       </Card>
 
       <FaultGlossary />
+
+      <Card>
+        <CardHeader>
+          <CardTitle className="font-display">Tren per Aset (Trend Engine)</CardTitle>
+          <CardDescription>
+            Kadar 7 gas DGA dari waktu ke waktu untuk 1 aset -- ini yang jadi bahan Delta Value &amp;
+            &quot;gas memburuk&quot; di Trend Engine (Bagian 2 Metodologi). Pilih aset yang punya
+            &ge;2 titik sampling.
+          </CardDescription>
+          <select
+            value={trendAsset}
+            onChange={(e) => setTrendAsset(e.target.value)}
+            className="mt-2 h-9 max-w-xs rounded-md border border-input bg-transparent px-3 text-sm font-data"
+          >
+            {assetOptions.map((a) => (
+              <option key={a.asset_id} value={a.asset_id}>
+                {a.asset_id} ({a.count} sampel)
+              </option>
+            ))}
+          </select>
+        </CardHeader>
+        <CardContent>
+          <div className="h-80">
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={trendData} margin={{ left: 8, right: 12 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                <XAxis
+                  dataKey="sample_date"
+                  stroke="var(--muted-foreground)"
+                  tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                />
+                <YAxis
+                  stroke="var(--muted-foreground)"
+                  tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                  label={{ value: "ppm", angle: -90, position: "insideLeft", fill: "var(--muted-foreground)", fontSize: 11 }}
+                />
+                <Tooltip
+                  contentStyle={{
+                    background: "var(--popover)",
+                    border: "1px solid var(--border)",
+                    borderRadius: 6,
+                    fontSize: 12,
+                  }}
+                  labelFormatter={(label) => `Tanggal: ${label}`}
+                />
+                <Legend wrapperStyle={{ fontSize: 12 }} />
+                {GAS_TREND_LINES.map((g) => (
+                  <Line
+                    key={g.key}
+                    type="monotone"
+                    dataKey={g.key}
+                    name={g.name}
+                    stroke={g.color}
+                    strokeWidth={2}
+                    dot={{ r: 3 }}
+                  />
+                ))}
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          {trendData.length > 0 && (
+            <p className="text-xs text-muted-foreground mt-2">
+              Kesimpulan lab per titik: {trendData.map((r) => `${r.sample_date} = ${r.lab_fault_type}`).join(", ")}
+            </p>
+          )}
+        </CardContent>
+      </Card>
 
       <Card>
         <CardHeader>
