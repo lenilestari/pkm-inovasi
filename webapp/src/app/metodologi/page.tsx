@@ -110,6 +110,63 @@ export default function MetodologiPage() {
 
       <Card>
         <CardHeader>
+          <CardTitle className="font-display">Contoh: Format Mentah DGA vs PD</CardTitle>
+          <CardDescription>
+            Sekilas kelihatan sama-sama &quot;data sensor trafo&quot;, tapi strukturnya jauh
+            berbeda -- ini salah satu alasan kenapa keduanya belum bisa langsung digabung mentah.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="grid gap-4 sm:grid-cols-2">
+          <div className="rounded-md border border-border/70 p-3">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground mb-2">
+              DGA -- 1 baris riil (TR-44, 2023-11-23)
+            </p>
+            <pre className="text-xs font-data overflow-x-auto whitespace-pre">
+{`asset_id       TR-44
+sample_date    2023-11-23
+h2 (ppm)       8385
+ch4 (ppm)      1428
+c2h6 (ppm)     543
+c2h4 (ppm)     8
+c2h2 (ppm)     2.93
+co (ppm)       488
+co2 (ppm)      11733
+o2 (ppm)       117
+n2 (ppm)       45701
+lab_fault_type Partial Discharge`}
+            </pre>
+          </div>
+          <div className="rounded-md border border-border/70 p-3">
+            <p className="text-xs font-medium uppercase tracking-wider text-fault-attention mb-2">
+              PD (simulasi) -- 1 dari 6 titik ukur per sampel
+            </p>
+            <pre className="text-xs font-data overflow-x-auto whitespace-pre">
+{`asset_id           TR-26
+measured_at        2023-03-27
+method / unit      UHF / mV
+value              18.548
+reading_point_name UHF R-Top
+phase / position   R / Top
+overall_severity   Normal
+threshold_watch    50.0
+threshold_warning  200.0
+threshold_critical 500.0`}
+            </pre>
+          </div>
+        </CardContent>
+        <CardContent className="pt-0">
+          <p className="text-xs text-muted-foreground">
+            DGA: 1 baris = 1 sampel minyak (7 gas ppm sekaligus). PD: 1 baris = 1 dari 6 titik ukur
+            (3 fasa &times; 2 posisi) per sampel, satuan mV bukan ppm, plus ambang Watch/Warning/
+            Critical per titik. Data PD riil di lapangan (lihat catatan transparansi) malah lebih
+            beragam lagi -- tiap alat ukur (panel/switchgear/trafo) punya nama titik ukur sendiri,
+            tidak seragam seperti simulasi ini.
+          </p>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardHeader>
           <CardTitle className="font-display">Kolom Data Mentah (dari laporan lab)</CardTitle>
           <CardDescription>Field yang langsung ditranskrip dari PDF laporan Petrolab.</CardDescription>
         </CardHeader>
