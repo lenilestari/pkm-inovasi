@@ -9,6 +9,8 @@ import {
   Legend,
   Line,
   LineChart,
+  ReferenceArea,
+  ReferenceLine,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -362,7 +364,10 @@ export function Dashboard() {
             <p className="text-xs text-muted-foreground mt-0.5 mb-3">
               <code className="font-data">anomaly_score_raw</code> dari model AI -- angka tunggal
               hasil menggabungkan tren gas DGA (riil) di atas dengan tren PD (simulasi) di atas.
-              Makin rendah/negatif, makin dianggap anomali.
+              Makin rendah/negatif, makin dianggap anomali. Zona warna: <span className="text-fault-pd font-medium">merah = Kritis (&le; -0,02)</span>,
+              <span className="text-fault-thermal-oil font-medium"> kuning = Waspada (-0,02 s/d 0,1)</span>,
+              <span className="text-fault-normal font-medium"> hijau = Normal (&gt; 0,1)</span> -- sama
+              persis ambang yang dipakai di halaman Coba Sendiri.
             </p>
             <div className="h-48">
               <ResponsiveContainer width="100%" height="100%">
@@ -374,10 +379,16 @@ export function Dashboard() {
                     tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
                   />
                   <YAxis
+                    domain={[-0.35, 0.22]}
                     stroke="var(--muted-foreground)"
                     tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
                     label={{ value: "skor", angle: -90, position: "insideLeft", fill: "var(--muted-foreground)", fontSize: 11 }}
                   />
+                  <ReferenceArea y1={-0.35} y2={-0.02} fill="var(--fault-pd)" fillOpacity={0.08} />
+                  <ReferenceArea y1={-0.02} y2={0.1} fill="var(--fault-thermal-oil)" fillOpacity={0.08} />
+                  <ReferenceArea y1={0.1} y2={0.22} fill="var(--fault-normal)" fillOpacity={0.08} />
+                  <ReferenceLine y={-0.02} stroke="var(--fault-pd)" strokeDasharray="3 3" />
+                  <ReferenceLine y={0.1} stroke="var(--fault-thermal-oil)" strokeDasharray="3 3" />
                   <Tooltip
                     contentStyle={{
                       background: "var(--popover)",
@@ -386,13 +397,17 @@ export function Dashboard() {
                       fontSize: 12,
                     }}
                     labelFormatter={(label) => `Tanggal: ${label}`}
-                    formatter={(value) => [Number(value).toFixed(4), "anomaly_score_raw"]}
+                    formatter={(value) => {
+                      const v = Number(value);
+                      const zone = v <= -0.02 ? "Kritis" : v <= 0.1 ? "Waspada" : "Normal";
+                      return [`${v.toFixed(4)} (${zone})`, "anomaly_score_raw"];
+                    }}
                   />
                   <Line
                     type="monotone"
                     dataKey="anomaly_score_raw"
                     name="Skor Gabungan (AI)"
-                    stroke="var(--fault-pd)"
+                    stroke="var(--foreground)"
                     strokeWidth={2}
                     dot={{ r: 3 }}
                   />
