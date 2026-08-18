@@ -40,7 +40,7 @@ const EMPTY_GAS: Record<GasKey, string> = {
 };
 
 // --- PD Severity Logic -------------------------------------------------------
-// Threshold indikatif (dummy) — belum dikonfirmasi dari vendor alat ukur.
+// Threshold indikatif (dummy) ï¿½ belum dikonfirmasi dari vendor alat ukur.
 // Mengikuti pola data riil di data_pd_riil/*.csv (~7-42 dBmV, label "Noise").
 export type PdSeverityLevel = "normal" | "waspada" | "kritis";
 
@@ -188,7 +188,7 @@ function GasFieldset({
   );
 }
 
-/** Slider visual dBmV 0–60, dibagi 3 zona: Normal | Waspada | Kritis */
+/** Slider visual dBmV 0ï¿½60, dibagi 3 zona: Normal | Waspada | Kritis */
 function PdMeter({ dbmv }: { dbmv: number }) {
   const clamped = Math.min(dbmv, 60);
   const pct = (clamped / 60) * 100;
@@ -377,7 +377,7 @@ export function TryItForm() {
           <CardTitle className="font-display">Input Pembacaan DGA + PD</CardTitle>
           <CardDescription>
             Isi nilai gas terlarut DGA (ppm) dan nilai sensor Partial Discharge (dBmV).
-            Semua dihitung langsung di browser — tidak dikirim ke server manapun.
+            Semua dihitung langsung di browser ï¿½ tidak dikirim ke server manapun.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
@@ -475,8 +475,8 @@ export function TryItForm() {
                     <span className={`text-sm font-semibold ${livePd.colorClass}`}>
                       {livePd.level === "normal" && "? Normal"}
                       {livePd.level === "waspada" && "? Waspada"}
-                      {livePd.level === "kritis" && "¦ Kritis"}
-                      {livePdNum > 0 ? ` — ${livePdNum} dBmV` : ""}
+                      {livePd.level === "kritis" && "ï¿½ Kritis"}
+                      {livePdNum > 0 ? ` ï¿½ ${livePdNum} dBmV` : ""}
                     </span>
                     <Badge variant="outline" className="text-xs">
                       +{livePd.contribution} n_param
@@ -486,14 +486,14 @@ export function TryItForm() {
                   <div className="flex justify-between text-[10px] text-muted-foreground pt-0.5">
                     <span>0</span>
                     <span className="text-green-600 dark:text-green-400">Normal =20</span>
-                    <span className="text-yellow-600 dark:text-yellow-400">Waspada 20–40</span>
+                    <span className="text-yellow-600 dark:text-yellow-400">Waspada 20ï¿½40</span>
                     <span className="text-red-600 dark:text-red-400">&gt;40 Kritis</span>
                   </div>
                 </div>
               </div>
 
               <p className="text-xs text-muted-foreground/70 italic">
-                Threshold ini indikatif (dummy) — belum dikonfirmasi dari vendor. Data PD riil
+                Threshold ini indikatif (dummy) ï¿½ belum dikonfirmasi dari vendor. Data PD riil
                 belum overlap dengan dataset DGA (beda aset/titik ukur), nilai di sini simulatif.
               </p>
             </div>
@@ -510,7 +510,7 @@ export function TryItForm() {
         <CardHeader>
           <CardTitle className="font-display">Hasil</CardTitle>
           <CardDescription>
-            Rule Engine IEEE C57.104-2019 + IsolationForest (ONNX) — identik dengan notebook.
+            Rule Engine IEEE C57.104-2019 + IsolationForest (ONNX) ï¿½ identik dengan notebook.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -561,8 +561,8 @@ export function TryItForm() {
                   <span className={`text-sm font-semibold ${result.pdSeverity.colorClass}`}>
                     {result.pdSeverity.level === "normal" && "? Normal"}
                     {result.pdSeverity.level === "waspada" && "? Waspada"}
-                    {result.pdSeverity.level === "kritis" && "¦ Kritis"}
-                    {result.pdDbmvNum > 0 && ` — ${result.pdDbmvNum} dBmV`}
+                    {result.pdSeverity.level === "kritis" && "ï¿½ Kritis"}
+                    {result.pdDbmvNum > 0 && ` ï¿½ ${result.pdDbmvNum} dBmV`}
                   </span>
                   <Badge variant="outline" className="text-xs">
                     +{result.pdSeverity.contribution} n_param
@@ -603,10 +603,10 @@ export function TryItForm() {
                             <tr key={g} className="border-t border-border/30">
                               <td className="py-1 pr-3 font-medium uppercase">{g}</td>
                               <td className={`text-right pr-3 ${d !== null && d > 0 ? "text-orange-500" : ""}`}>
-                                {d !== null ? (d > 0 ? "+" : "") + d.toFixed(1) : "—"}
+                                {d !== null ? (d > 0 ? "+" : "") + d.toFixed(1) : "ï¿½"}
                               </td>
                               <td className={`text-right pr-3 ${excRt ? "text-red-500 font-semibold" : ""}`}>
-                                {r !== null ? (r > 0 ? "+" : "") + r.toFixed(1) : "—"}
+                                {r !== null ? (r > 0 ? "+" : "") + r.toFixed(1) : "ï¿½"}
                               </td>
                               <td>
                                 {excRt ? (
@@ -618,7 +618,7 @@ export function TryItForm() {
                                 ) : d !== null && d < 0 ? (
                                   <span className="text-green-600 dark:text-green-400">? Turun</span>
                                 ) : (
-                                  <span className="text-muted-foreground">— Stabil</span>
+                                  <span className="text-muted-foreground">ï¿½ Stabil</span>
                                 )}
                               </td>
                             </tr>
@@ -641,7 +641,7 @@ export function TryItForm() {
               ) : (
                 <div className="rounded-md border border-dashed border-border/50 px-3 py-2.5">
                   <p className="text-xs text-muted-foreground">
-                    Tren gas tidak tersedia — isi &quot;Pembacaan Sebelumnya&quot; untuk melihat
+                    Tren gas tidak tersedia ï¿½ isi &quot;Pembacaan Sebelumnya&quot; untuk melihat
                     analisis delta &amp; rate per gas.
                   </p>
                 </div>
