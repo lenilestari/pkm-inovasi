@@ -27,6 +27,7 @@ interface Row {
   rule_fault_type: string;
   status_match: boolean;
   n_gas_worsening: number;
+  pd_worsening: number;
   n_parameters_worsening: number;
   anomaly_score_raw: number;
 }
@@ -206,7 +207,9 @@ export function Dashboard() {
           <CardTitle className="font-display">Log Data, 69 Aset (161 Sampel)</CardTitle>
           <CardDescription>
             Ditranskrip verbatim dari 3 laporan lab PT Petrolab Services (Des 2023, Mar 2024, Jul
-            2024).
+            2024). Kolom &quot;Gas Memburuk&quot; dan &quot;Match&quot;-&quot;Score&quot; murni
+            dari data DGA riil; kolom &quot;PD&quot; ditandai terpisah karena masih data simulasi
+            (lihat Alert transparansi di atas).
           </CardDescription>
           <Input
             placeholder="Cari asset_id atau fault type..."
@@ -225,6 +228,15 @@ export function Dashboard() {
                   <th className="text-left font-medium px-3 py-2">Lab</th>
                   <th className="text-left font-medium px-3 py-2">Rule Engine</th>
                   <th className="text-left font-medium px-3 py-2">Match</th>
+                  <th className="text-center font-medium px-3 py-2" title="Jumlah gas DGA yang memburuk (data riil)">
+                    Gas Memburuk
+                  </th>
+                  <th className="text-center font-medium px-3 py-2 text-fault-attention" title="Indikasi PD memburuk -- data SIMULASI, bukan sensor riil">
+                    PD (simulasi)
+                  </th>
+                  <th className="text-center font-semibold px-3 py-2" title="n_gas_worsening + pd_worsening">
+                    Total Memburuk
+                  </th>
                   <th className="text-right font-medium px-3 py-2">Score</th>
                 </tr>
               </thead>
@@ -263,6 +275,13 @@ export function Dashboard() {
                       ) : (
                         <span style={{ color: "var(--fault-pd)" }}>beda</span>
                       )}
+                    </td>
+                    <td className="px-3 py-2 text-center tabular-nums">{r.n_gas_worsening}</td>
+                    <td className="px-3 py-2 text-center tabular-nums text-fault-attention">
+                      {r.pd_worsening}
+                    </td>
+                    <td className="px-3 py-2 text-center tabular-nums font-semibold">
+                      {r.n_parameters_worsening}
                     </td>
                     <td className="px-3 py-2 text-right tabular-nums">
                       {r.anomaly_score_raw.toFixed(4)}
