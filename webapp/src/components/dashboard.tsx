@@ -37,6 +37,8 @@ interface Row {
   rule_fault_type: string;
   status_match: boolean;
   n_gas_worsening: number;
+  pd_value_max: number | null;
+  pd_overall_severity: string | null;
   pd_worsening: number;
   n_parameters_worsening: number;
   anomaly_score_raw: number;
@@ -305,6 +307,99 @@ export function Dashboard() {
               Kesimpulan lab per titik: {trendData.map((r) => `${r.sample_date} = ${r.lab_fault_type}`).join(", ")}
             </p>
           )}
+
+          <div className="mt-8 pt-6 border-t border-border/60">
+            <p className="text-sm font-medium">
+              Tren PD <span className="text-fault-attention font-normal">(SIMULASI, bukan sensor riil)</span>
+            </p>
+            <p className="text-xs text-muted-foreground mt-0.5 mb-3">
+              Nilai PD (mV) untuk aset yang sama, tanggal yang sama -- garis putus-putus menandai
+              ini bukan data sensor sungguhan.
+            </p>
+            <div className="h-48">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={trendData} margin={{ left: 8, right: 12 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis
+                    dataKey="sample_date"
+                    stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                  />
+                  <YAxis
+                    stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                    label={{ value: "mV", angle: -90, position: "insideLeft", fill: "var(--muted-foreground)", fontSize: 11 }}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "var(--popover)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 6,
+                      fontSize: 12,
+                    }}
+                    labelFormatter={(label) => `Tanggal: ${label}`}
+                    formatter={(value, _name, item) => [
+                      `${Number(value).toFixed(1)} mV (${item.payload.pd_overall_severity ?? "-"})`,
+                      "PD (simulasi)",
+                    ]}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="pd_value_max"
+                    name="PD (simulasi, mV)"
+                    stroke="var(--fault-attention)"
+                    strokeWidth={2}
+                    strokeDasharray="5 4"
+                    dot={{ r: 3 }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-6 border-t border-border/60">
+            <p className="text-sm font-medium">Tren Skor Gabungan (Composite Risk Score)</p>
+            <p className="text-xs text-muted-foreground mt-0.5 mb-3">
+              <code className="font-data">anomaly_score_raw</code> dari model AI -- angka tunggal
+              hasil menggabungkan tren gas DGA (riil) di atas dengan tren PD (simulasi) di atas.
+              Makin rendah/negatif, makin dianggap anomali.
+            </p>
+            <div className="h-48">
+              <ResponsiveContainer width="100%" height="100%">
+                <LineChart data={trendData} margin={{ left: 8, right: 12 }}>
+                  <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
+                  <XAxis
+                    dataKey="sample_date"
+                    stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                  />
+                  <YAxis
+                    stroke="var(--muted-foreground)"
+                    tick={{ fontSize: 11, fontFamily: "var(--font-data)" }}
+                    label={{ value: "skor", angle: -90, position: "insideLeft", fill: "var(--muted-foreground)", fontSize: 11 }}
+                  />
+                  <Tooltip
+                    contentStyle={{
+                      background: "var(--popover)",
+                      border: "1px solid var(--border)",
+                      borderRadius: 6,
+                      fontSize: 12,
+                    }}
+                    labelFormatter={(label) => `Tanggal: ${label}`}
+                    formatter={(value) => [Number(value).toFixed(4), "anomaly_score_raw"]}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="anomaly_score_raw"
+                    name="Skor Gabungan (AI)"
+                    stroke="var(--fault-pd)"
+                    strokeWidth={2}
+                    dot={{ r: 3 }}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </div>
         </CardContent>
       </Card>
 

@@ -203,7 +203,7 @@ export_cols = [
     *[f"delta_{g}" for g in GAS_COLS],
     "rule_status", "rule_fault_type", "rule_fault_severity",
     "lab_status", "lab_fault_type", "status_match",
-    "n_gas_worsening", "pd_worsening", "n_parameters_worsening",
+    "n_gas_worsening", "pd_value_max", "pd_overall_severity", "pd_worsening", "n_parameters_worsening",
     "anomaly_score", "anomaly_score_raw",
 ]
 out_df = df[export_cols].copy()
