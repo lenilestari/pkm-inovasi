@@ -2,6 +2,7 @@
 // (aplikasi ini 100% client-side, tanpa server), tapi rangkaian kalimat deterministik dari
 // angka yang sama yang sudah ditampilkan di badge, supaya orang awam gampang paham artinya.
 import type { GasKey } from "./rule-engine";
+import type { PdSeverity } from "@/components/try-it-form";
 
 export const GAS_SHORT_NAMES: Record<GasKey, string> = {
   h2: "H2",
@@ -40,7 +41,9 @@ export interface NarrativeInput {
   exceedsTable2: GasKey[];
   nGasWorsening: number;
   worseningGases: GasKey[];
-  pdWorsening: boolean;
+  /** PD severity dari input dBmV — menggantikan pdWorsening boolean lama. */
+  pdSeverity: PdSeverity;
+  pdDbmvNum?: number;
   nParametersWorsening: number;
   anomalyScoreRaw: number;
   riskLabel: string;
@@ -119,10 +122,16 @@ export function buildNarrative(r: NarrativeInput): string[] {
     );
   }
 
+  const pdDesc =
+    r.pdSeverity.contribution === 0
+      ? `+0 dari PD (${r.pdDbmvNum ? `${r.pdDbmvNum} dBmV, masih Normal` : "tidak terukur"})`
+      : r.pdSeverity.contribution === 1
+        ? `+1 dari PD (${r.pdDbmvNum} dBmV, kategori Waspada 20–40 dBmV, indikatif/simulatif)`
+        : `+2 dari PD (${r.pdDbmvNum} dBmV, kategori Kritis >40 dBmV, indikatif/simulatif)`;
   paragraphs.push(
-    `Total Parameter Memburuk (fitur yang masuk ke model AI): ${r.nParametersWorsening} = ${r.nGasWorsening} dari gas DGA (riil) ${r.pdWorsening ? "+ 1 dari indikasi PD yang kamu centang manual (simulasi/manual, bukan sensor riil)" : "+ 0 dari PD (checkbox tidak dicentang)"}. Ini bukti arsitektur sistem kami memang menggabungkan PD dan DGA jadi satu angka, tapi sisi PD-nya baru bisa diisi manual/simulasi, belum sensor riil. ${
+    `Total Parameter Memburuk (fitur ke model AI): ${r.nParametersWorsening} = ${r.nGasWorsening} gas DGA ${pdDesc}. Ini arsitektur sistem kami yang menggabungkan PD dan DGA jadi satu angka risiko — threshold PD masih indikatif (dummy) karena data PD riil belum overlap dengan dataset DGA. ${
       r.nParametersWorsening >= 2
-        ? "Karena totalnya sudah ≥ 2, ini dianggap early warning: kondisinya SEDANG AKTIF memburuk di lebih dari satu parameter sekaligus."
+        ? "Totalnya ≥ 2, ini early warning: lebih dari satu parameter sekaligus sedang memburuk."
         : ""
     }`,
   );

@@ -39,6 +39,33 @@ const EMPTY_GAS: Record<GasKey, string> = {
   co2: "",
 };
 
+// --- PD Severity Logic -------------------------------------------------------
+// Threshold indikatif (dummy) — belum dikonfirmasi dari vendor alat ukur.
+// Mengikuti pola data riil di data_pd_riil/*.csv (~7-42 dBmV, label "Noise").
+export type PdSeverityLevel = "normal" | "waspada" | "kritis";
+
+export interface PdSeverity {
+  level: PdSeverityLevel;
+  contribution: 0 | 1 | 2;
+  label: string;
+  colorClass: string;
+}
+
+export function classifyPdSeverity(dbmvStr: string): PdSeverity {
+  const v = parseFloat(dbmvStr);
+  if (!dbmvStr || isNaN(v) || v <= 0) {
+    return { level: "normal", contribution: 0, label: "Tidak terukur", colorClass: "text-muted-foreground" };
+  }
+  if (v <= 20) {
+    return { level: "normal", contribution: 0, label: `Normal`, colorClass: "text-green-600 dark:text-green-400" };
+  }
+  if (v <= 40) {
+    return { level: "waspada", contribution: 1, label: `Waspada`, colorClass: "text-yellow-600 dark:text-yellow-400" };
+  }
+  return { level: "kritis", contribution: 2, label: `Kritis`, colorClass: "text-red-600 dark:text-red-400" };
+}
+
+// --- Presets -----------------------------------------------------------------
 interface ExamplePreset {
   label: string;
   faultType: string;
@@ -48,17 +75,10 @@ interface ExamplePreset {
   curr: Record<GasKey, string>;
   o2: string;
   n2: string;
-  /** Kalau ada: rule engine kita TIDAK BISA menghasilkan label ini (arsitekturnya cuma
-   *  5 kategori), jadi hasil Fault Type yang muncul memang akan beda dari label preset --
-   *  ini bukan bug, tapi keterbatasan yang kita disclose. */
+  pdDbmv: string;
   ruleEngineCaveat?: string;
 }
 
-// Semua patokan di bawah ini nilai RIIL langsung dari dataset 69 aset (bukan dikarang) --
-// satu contoh representatif per kategori fault_type yang benar-benar ada di data lab Petrolab.
-// Untuk Normal/Stray Gassing/Thermal Cellulose/Partial Discharge, baris dipilih yang rule_fault_type
-// hasil rule engine kita SAMA dengan lab_fault_type (status_match), supaya demo konsisten dengan
-// label tombolnya -- lihat dataset.json kolom status_match sebelum ganti baris presetnya.
 const EXAMPLE_PRESETS: ExamplePreset[] = [
   {
     label: "Normal",
@@ -69,6 +89,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "3", ch4: "10", c2h6: "3", c2h4: "8", c2h2: "0", co: "702", co2: "6854" },
     o2: "1694",
     n2: "71536",
+    pdDbmv: "8",
   },
   {
     label: "Stray Gassing",
@@ -79,6 +100,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "2", ch4: "9", c2h6: "3", c2h4: "100", c2h2: "0", co: "16", co2: "10215" },
     o2: "117",
     n2: "64349",
+    pdDbmv: "12",
   },
   {
     label: "Mild Overheating Paper",
@@ -89,6 +111,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "85", ch4: "14", c2h6: "3", c2h4: "8", c2h2: "0", co: "480", co2: "18735" },
     o2: "1367",
     n2: "70057",
+    pdDbmv: "18",
     ruleEngineCaveat:
       "Rule engine kami cuma bisa hasilkan 5 kategori (Normal, Stray Gassing, Thermal Fault (Oil), Thermal Cellulose, Partial Discharge) -- \"Mild Overheating Paper\" cuma ada sebagai kesimpulan lab, bukan output rule engine kami. Contoh ini sengaja dipasang untuk menunjukkan keterbatasan itu secara jujur, bukan disembunyikan.",
   },
@@ -101,6 +124,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "2", ch4: "3", c2h6: "4", c2h4: "16", c2h2: "0", co: "271", co2: "5545" },
     o2: "25555",
     n2: "60244",
+    pdDbmv: "22",
     ruleEngineCaveat:
       "Rule engine kami cuma bisa hasilkan 5 kategori (Normal, Stray Gassing, Thermal Fault (Oil), Thermal Cellulose, Partial Discharge) -- \"Attention\" cuma ada sebagai flag ketidakpastian dari lab, bukan output rule engine kami. Contoh ini sengaja dipasang untuk menunjukkan keterbatasan itu secara jujur, bukan disembunyikan.",
   },
@@ -113,6 +137,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "2", ch4: "29", c2h6: "3", c2h4: "8", c2h2: "0", co: "1325", co2: "7152" },
     o2: "1125",
     n2: "81304",
+    pdDbmv: "15",
   },
   {
     label: "Partial Discharge",
@@ -123,8 +148,12 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
     curr: { h2: "8385", ch4: "1428", c2h6: "543", c2h4: "8", c2h2: "2.93", co: "488", co2: "11733" },
     o2: "117",
     n2: "45701",
+    // dummy indikatif: PD berat ? 47 dBmV (> 40 = Kritis)
+    pdDbmv: "47",
   },
 ];
+
+// --- Sub-components -----------------------------------------------------------
 
 function GasFieldset({
   title,
@@ -159,11 +188,36 @@ function GasFieldset({
   );
 }
 
+/** Slider visual dBmV 0–60, dibagi 3 zona: Normal | Waspada | Kritis */
+function PdMeter({ dbmv }: { dbmv: number }) {
+  const clamped = Math.min(dbmv, 60);
+  const pct = (clamped / 60) * 100;
+  return (
+    <div className="relative h-3 rounded-full overflow-hidden bg-muted mt-1">
+      {/* Zona warna */}
+      <div className="absolute inset-0 flex">
+        <div className="flex-1" style={{ maxWidth: `${(20 / 60) * 100}%`, background: "hsl(142 71% 45%)", opacity: 0.35 }} />
+        <div className="flex-1" style={{ maxWidth: `${(20 / 60) * 100}%`, background: "hsl(48 96% 53%)", opacity: 0.45 }} />
+        <div className="flex-1" style={{ background: "hsl(0 84% 60%)", opacity: 0.35 }} />
+      </div>
+      {/* Indikator posisi */}
+      {dbmv > 0 && (
+        <div
+          className="absolute top-0 bottom-0 w-1.5 rounded-sm bg-foreground shadow-sm transition-all duration-300"
+          style={{ left: `calc(${pct}% - 3px)` }}
+        />
+      )}
+    </div>
+  );
+}
+
 const STATUS_LABEL: Record<number, { label: string; variant: "default" | "secondary" | "destructive" }> = {
   1: { label: "Status 1 - Normal", variant: "secondary" },
   2: { label: "Status 2 - Waspada", variant: "default" },
   3: { label: "Status 3 - Kritis", variant: "destructive" },
 };
+
+// --- Main Component -----------------------------------------------------------
 
 export function TryItForm() {
   const [manufactureYear, setManufactureYear] = useState("2010");
@@ -173,27 +227,35 @@ export function TryItForm() {
   const [currGas, setCurrGas] = useState<Record<GasKey, string>>({ ...EMPTY_GAS });
   const [o2, setO2] = useState("");
   const [n2, setN2] = useState("");
-  const [pdWorsening, setPdWorsening] = useState(false);
+  const [pdDbmv, setPdDbmv] = useState("");
   const [presetCaveat, setPresetCaveat] = useState<string | null>(null);
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [result, setResult] = useState<null | {
+
+  type ResultType = {
     status: number;
     faultType: string;
     o2n2Class: string;
     ageBucket: string;
     exceedsTable1: GasKey[];
     exceedsTable2: GasKey[];
+    exceedsDelta: GasKey[];
+    exceedsRate: GasKey[];
     nGasWorsening: number;
     worseningGases: GasKey[];
-    pdWorsening: boolean;
+    pdSeverity: PdSeverity;
+    pdDbmvNum: number;
     nParametersWorsening: number;
     anomalyScoreRaw: number;
     isAnomaly: boolean;
     riskLabel: string;
     riskVariant: "default" | "secondary" | "destructive";
-  }>(null);
+    // untuk tren
+    delta: Partial<GasReading>;
+    rate: Partial<GasReading>;
+    hasTrend: boolean;
+  };
+  const [result, setResult] = useState<null | ResultType>(null);
 
   function loadPreset(preset: ExamplePreset) {
     setCurrGas(preset.curr);
@@ -203,6 +265,7 @@ export function TryItForm() {
     setCurrDate(preset.sampleDate);
     setPrevDate("");
     setPrevGas({ ...EMPTY_GAS });
+    setPdDbmv(preset.pdDbmv);
     setPresetCaveat(preset.ruleEngineCaveat ?? null);
     setResult(null);
     setError(null);
@@ -240,7 +303,11 @@ export function TryItForm() {
 
     const rule = evaluateDga({ gas: gasNow, o2: o2n, n2: n2n, age, delta, rate });
     const worsening = countGasWorsening(delta, rule.o2n2Class);
-    const nParametersWorsening = worsening.count + (pdWorsening ? 1 : 0);
+
+    // PD: klasifikasi dBmV ? contribution ke nParametersWorsening
+    const pdSev = classifyPdSeverity(pdDbmv);
+    const pdDbmvNum = parseFloat(pdDbmv) || 0;
+    const nParametersWorsening = worsening.count + pdSev.contribution;
     const ruleFaultSeverity = FAULT_SEVERITY_RANK[rule.faultType] ?? 0;
 
     setLoading(true);
@@ -276,14 +343,20 @@ export function TryItForm() {
         ageBucket: rule.ageBucket,
         exceedsTable1: rule.exceedsTable1,
         exceedsTable2: rule.exceedsTable2,
+        exceedsDelta: rule.exceedsDelta,
+        exceedsRate: rule.exceedsRate,
         nGasWorsening: worsening.count,
         worseningGases: worsening.gases,
-        pdWorsening,
+        pdSeverity: pdSev,
+        pdDbmvNum,
         nParametersWorsening,
         anomalyScoreRaw,
         isAnomaly,
         riskLabel,
         riskVariant,
+        delta,
+        rate,
+        hasTrend: hasPrev,
       });
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
@@ -292,20 +365,25 @@ export function TryItForm() {
     }
   }
 
+  // Live preview PD severity sebelum submit
+  const livePd = classifyPdSeverity(pdDbmv);
+  const livePdNum = parseFloat(pdDbmv) || 0;
+
   return (
     <div className="grid gap-6 lg:grid-cols-2">
+      {/* -- FORM -- */}
       <Card>
         <CardHeader>
-          <CardTitle className="font-display">Input Pembacaan DGA</CardTitle>
+          <CardTitle className="font-display">Input Pembacaan DGA + PD</CardTitle>
           <CardDescription>
-            Isi nilai gas terlarut (ppm) hasil uji lab. Pembacaan sebelumnya opsional, kalau
-            diisi, Delta Value / Gas Rate ikut dihitung (dipakai Rule Engine &amp; Risk Score).
+            Isi nilai gas terlarut DGA (ppm) dan nilai sensor Partial Discharge (dBmV).
+            Semua dihitung langsung di browser — tidak dikirim ke server manapun.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-5">
           <div>
             <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
-              Patokan, nilai riil per kategori (klik buat isi form otomatis)
+              Patokan nilai riil per kategori (klik ? isi form otomatis)
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
               {EXAMPLE_PRESETS.map((p) => (
@@ -329,6 +407,7 @@ export function TryItForm() {
               </Alert>
             )}
           </div>
+
           <form onSubmit={handleSubmit} className="space-y-5">
             <div className="grid grid-cols-2 gap-3">
               <div className="space-y-1">
@@ -349,7 +428,11 @@ export function TryItForm() {
               </div>
             </div>
 
-            <GasFieldset title="Pembacaan Sekarang" values={currGas} onChange={(g, v) => setCurrGas((s) => ({ ...s, [g]: v }))} />
+            <GasFieldset
+              title="Pembacaan Sekarang"
+              values={currGas}
+              onChange={(g, v) => setCurrGas((s) => ({ ...s, [g]: v }))}
+            />
 
             <Separator />
 
@@ -357,28 +440,77 @@ export function TryItForm() {
               <Label htmlFor="prevDate">Tanggal Sampling Sebelumnya (opsional)</Label>
               <Input id="prevDate" type="date" value={prevDate} onChange={(e) => setPrevDate(e.target.value)} />
             </div>
-            <GasFieldset title="Pembacaan Sebelumnya (opsional)" values={prevGas} onChange={(g, v) => setPrevGas((s) => ({ ...s, [g]: v }))} />
+            <GasFieldset
+              title="Pembacaan Sebelumnya (opsional)"
+              values={prevGas}
+              onChange={(g, v) => setPrevGas((s) => ({ ...s, [g]: v }))}
+            />
 
-            <label className="flex items-center gap-2 text-sm">
-              <input type="checkbox" checked={pdWorsening} onChange={(e) => setPdWorsening(e.target.checked)} className="size-4" />
-              Indikasi pembacaan Partial Discharge (sensor UHF/dsb.) memburuk sejak sampel sebelumnya
-              <span className="text-muted-foreground">(opsional, manual, lihat catatan data PD di halaman utama)</span>
-            </label>
+            <Separator />
 
-            <Button type="submit" disabled={loading}>
+            {/* -- Input PD ----------------------------------------------- */}
+            <div className="rounded-lg border border-border/60 bg-muted/30 p-4 space-y-3">
+              <div>
+                <p className="text-sm font-medium">Sensor Partial Discharge (opsional)</p>
+                <p className="text-xs text-muted-foreground mt-0.5">
+                  Nilai bacaan sensor PD dalam dBmV. Kosongkan jika tidak tersedia.
+                </p>
+              </div>
+
+              <div className="flex items-end gap-3">
+                <div className="space-y-1 w-36">
+                  <Label htmlFor="pdDbmv">Nilai PD Max (dBmV)</Label>
+                  <Input
+                    id="pdDbmv"
+                    type="number"
+                    step="any"
+                    min="0"
+                    value={pdDbmv}
+                    onChange={(e) => setPdDbmv(e.target.value)}
+                    placeholder="contoh: 35"
+                  />
+                </div>
+                <div className="flex-1 pb-0.5 space-y-0.5">
+                  <div className="flex items-center justify-between">
+                    <span className={`text-sm font-semibold ${livePd.colorClass}`}>
+                      {livePd.level === "normal" && "? Normal"}
+                      {livePd.level === "waspada" && "? Waspada"}
+                      {livePd.level === "kritis" && "¦ Kritis"}
+                      {livePdNum > 0 ? ` — ${livePdNum} dBmV` : ""}
+                    </span>
+                    <Badge variant="outline" className="text-xs">
+                      +{livePd.contribution} n_param
+                    </Badge>
+                  </div>
+                  <PdMeter dbmv={livePdNum} />
+                  <div className="flex justify-between text-[10px] text-muted-foreground pt-0.5">
+                    <span>0</span>
+                    <span className="text-green-600 dark:text-green-400">Normal =20</span>
+                    <span className="text-yellow-600 dark:text-yellow-400">Waspada 20–40</span>
+                    <span className="text-red-600 dark:text-red-400">&gt;40 Kritis</span>
+                  </div>
+                </div>
+              </div>
+
+              <p className="text-xs text-muted-foreground/70 italic">
+                Threshold ini indikatif (dummy) — belum dikonfirmasi dari vendor. Data PD riil
+                belum overlap dengan dataset DGA (beda aset/titik ukur), nilai di sini simulatif.
+              </p>
+            </div>
+
+            <Button type="submit" disabled={loading} className="w-full">
               {loading ? "Menghitung..." : "Hitung Rule Engine + Risk Score"}
             </Button>
           </form>
         </CardContent>
       </Card>
 
+      {/* -- HASIL -- */}
       <Card>
         <CardHeader>
           <CardTitle className="font-display">Hasil</CardTitle>
           <CardDescription>
-            Rule Engine (IEEE C57.104-2019) dijalankan langsung di browser. Composite Risk Score
-            dihitung oleh model IsolationForest yang sama persis dengan notebook (diekspor ke
-            ONNX, bukan reimplementasi terpisah).
+            Rule Engine IEEE C57.104-2019 + IsolationForest (ONNX) — identik dengan notebook.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-4">
@@ -393,8 +525,10 @@ export function TryItForm() {
               Isi form di kiri lalu klik &quot;Hitung&quot;, atau pakai salah satu contoh preset.
             </p>
           )}
+
           {result && (
             <>
+              {/* -- Skor Utama -- */}
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs text-muted-foreground mb-1">DGA Rule Engine</p>
@@ -418,6 +552,104 @@ export function TryItForm() {
 
               <Separator />
 
+              {/* -- PD Summary -- */}
+              <div className="rounded-md border border-border/50 bg-muted/20 px-3 py-2.5 space-y-2">
+                <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                  Partial Discharge
+                </p>
+                <div className="flex items-center justify-between">
+                  <span className={`text-sm font-semibold ${result.pdSeverity.colorClass}`}>
+                    {result.pdSeverity.level === "normal" && "? Normal"}
+                    {result.pdSeverity.level === "waspada" && "? Waspada"}
+                    {result.pdSeverity.level === "kritis" && "¦ Kritis"}
+                    {result.pdDbmvNum > 0 && ` — ${result.pdDbmvNum} dBmV`}
+                  </span>
+                  <Badge variant="outline" className="text-xs">
+                    +{result.pdSeverity.contribution} n_param
+                  </Badge>
+                </div>
+                {result.pdDbmvNum > 0 && <PdMeter dbmv={result.pdDbmvNum} />}
+                <p className="text-xs text-muted-foreground">
+                  n_parameters_worsening ={" "}
+                  <span className="font-data font-semibold">{result.nParametersWorsening}</span>
+                  {" "}({result.nGasWorsening} gas DGA naik + {result.pdSeverity.contribution} PD)
+                </p>
+              </div>
+
+              {/* -- Tren Gas -- */}
+              {result.hasTrend ? (
+                <div className="rounded-md border border-border/50 bg-muted/20 px-3 py-2.5 space-y-2">
+                  <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider">
+                    Tren Gas (Delta + Rate)
+                  </p>
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-xs font-data">
+                      <thead>
+                        <tr className="text-muted-foreground">
+                          <th className="text-left py-1 pr-3">Gas</th>
+                          <th className="text-right pr-3">? (ppm)</th>
+                          <th className="text-right pr-3">Rate (ppm/thn)</th>
+                          <th className="text-left">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {GAS_COLS.map((g) => {
+                          const d = result.delta[g] ?? null;
+                          const r = result.rate[g] ?? null;
+                          const isWorsen = result.worseningGases.includes(g);
+                          const excDs = result.exceedsDelta.includes(g);
+                          const excRt = result.exceedsRate.includes(g);
+                          return (
+                            <tr key={g} className="border-t border-border/30">
+                              <td className="py-1 pr-3 font-medium uppercase">{g}</td>
+                              <td className={`text-right pr-3 ${d !== null && d > 0 ? "text-orange-500" : ""}`}>
+                                {d !== null ? (d > 0 ? "+" : "") + d.toFixed(1) : "—"}
+                              </td>
+                              <td className={`text-right pr-3 ${excRt ? "text-red-500 font-semibold" : ""}`}>
+                                {r !== null ? (r > 0 ? "+" : "") + r.toFixed(1) : "—"}
+                              </td>
+                              <td>
+                                {excRt ? (
+                                  <span className="text-red-500">? Lewati batas rate</span>
+                                ) : excDs ? (
+                                  <span className="text-orange-500">? Lewati batas delta</span>
+                                ) : isWorsen ? (
+                                  <span className="text-yellow-600 dark:text-yellow-400">? Naik</span>
+                                ) : d !== null && d < 0 ? (
+                                  <span className="text-green-600 dark:text-green-400">? Turun</span>
+                                ) : (
+                                  <span className="text-muted-foreground">— Stabil</span>
+                                )}
+                              </td>
+                            </tr>
+                          );
+                        })}
+                      </tbody>
+                    </table>
+                  </div>
+                  {result.exceedsDelta.length > 0 && (
+                    <p className="text-xs text-orange-500">
+                      ? Melampaui batas delta: {result.exceedsDelta.join(", ")}
+                    </p>
+                  )}
+                  {result.exceedsRate.length > 0 && (
+                    <p className="text-xs text-red-500 font-medium">
+                      ? Melampaui batas rate: {result.exceedsRate.join(", ")}
+                    </p>
+                  )}
+                </div>
+              ) : (
+                <div className="rounded-md border border-dashed border-border/50 px-3 py-2.5">
+                  <p className="text-xs text-muted-foreground">
+                    Tren gas tidak tersedia — isi &quot;Pembacaan Sebelumnya&quot; untuk melihat
+                    analisis delta &amp; rate per gas.
+                  </p>
+                </div>
+              )}
+
+              <Separator />
+
+              {/* -- Kesimpulan -- */}
               <div>
                 <p className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-2">
                   Kesimpulan
