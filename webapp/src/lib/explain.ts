@@ -40,6 +40,8 @@ export interface NarrativeInput {
   exceedsTable2: GasKey[];
   nGasWorsening: number;
   worseningGases: GasKey[];
+  pdWorsening: boolean;
+  nParametersWorsening: number;
   anomalyScoreRaw: number;
   riskLabel: string;
 }
@@ -109,17 +111,21 @@ export function buildNarrative(r: NarrativeInput): string[] {
 
   if (r.nGasWorsening > 0) {
     paragraphs.push(
-      `Jumlah gas yang "memburuk": ${r.nGasWorsening} (${gasList(r.worseningGases)}), dibanding pembacaan sebelumnya, gas-gas ini naik signifikan. ${
-        r.nGasWorsening >= 2
-          ? "Ini yang paling penting secara operasional, artinya kondisinya SEDANG AKTIF memburuk, bukan cuma kebetulan tinggi lalu stabil."
-          : "Baru 1 gas yang naik, perlu dipantau apakah berlanjut di sampel berikutnya."
-      }`,
+      `Jumlah gas DGA yang "memburuk": ${r.nGasWorsening} (${gasList(r.worseningGases)}), dibanding pembacaan sebelumnya, gas-gas ini naik signifikan.`,
     );
   } else {
     paragraphs.push(
-      "Tidak ada gas yang \"memburuk\" secara signifikan dibanding pembacaan sebelumnya (atau belum ada data pembacaan sebelumnya), trennya stabil.",
+      "Tidak ada gas DGA yang \"memburuk\" secara signifikan dibanding pembacaan sebelumnya (atau belum ada data pembacaan sebelumnya).",
     );
   }
+
+  paragraphs.push(
+    `Total Parameter Memburuk (fitur yang masuk ke model AI): ${r.nParametersWorsening} = ${r.nGasWorsening} dari gas DGA (riil) ${r.pdWorsening ? "+ 1 dari indikasi PD yang kamu centang manual (simulasi/manual, bukan sensor riil)" : "+ 0 dari PD (checkbox tidak dicentang)"}. Ini bukti arsitektur sistem kami memang menggabungkan PD dan DGA jadi satu angka, tapi sisi PD-nya baru bisa diisi manual/simulasi, belum sensor riil. ${
+      r.nParametersWorsening >= 2
+        ? "Karena totalnya sudah ≥ 2, ini dianggap early warning: kondisinya SEDANG AKTIF memburuk di lebih dari satu parameter sekaligus."
+        : ""
+    }`,
+  );
 
   return paragraphs;
 }

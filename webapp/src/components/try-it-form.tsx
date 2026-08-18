@@ -175,6 +175,8 @@ export function TryItForm() {
     exceedsTable2: GasKey[];
     nGasWorsening: number;
     worseningGases: GasKey[];
+    pdWorsening: boolean;
+    nParametersWorsening: number;
     anomalyScoreRaw: number;
     isAnomaly: boolean;
     riskLabel: string;
@@ -263,6 +265,8 @@ export function TryItForm() {
         exceedsTable2: rule.exceedsTable2,
         nGasWorsening: worsening.count,
         worseningGases: worsening.gases,
+        pdWorsening,
+        nParametersWorsening,
         anomalyScoreRaw,
         isAnomaly,
         riskLabel,
